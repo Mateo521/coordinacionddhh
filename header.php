@@ -33,17 +33,23 @@
             <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
                 <a href="#inicio" class="flex items-center gap-3 group">
-                      <img class="h-11" src="<?php echo get_template_directory_uri(); ?>/images/logo-unsl.svg" alt="<?php bloginfo('name'); ?>">
-                  
+                    <img class="h-11" src="<?php echo get_template_directory_uri(); ?>/images/logo-unsl.svg" alt="<?php bloginfo('name'); ?>">
                 </a>
-
                 <nav class="hidden lg:flex items-center gap-1">
-                    <a href="#inicio" class="text-white/70 hover:text-[var(--color-primary)] px-3 py-2 text-sm font-400 transition-colors">Inicio</a>
-                    <a href="#institucional" class="text-white/70 hover:text-[var(--color-primary)] px-3 py-2 text-sm font-400 transition-colors">Institucional</a>
-                    <a href="#lineas" class="text-white/70 hover:text-[var(--color-primary)] px-3 py-2 text-sm font-400 transition-colors">Líneas de acción</a>
-                    <a href="#integrantes" class="text-white/70 hover:text-[var(--color-primary)] px-3 py-2 text-sm font-400 transition-colors">Integrantes</a>
-                    <a href="#novedades" class="text-white/70 hover:text-[var(--color-primary)] px-3 py-2 text-sm font-400 transition-colors">Novedades</a>
-                    <a href="#contacto" class="ml-2 bg-[var(--color-primary)] hover:bg-[#B8923A] text-[var(--color-base)] px-4 py-2  text-sm font-600 transition-colors">Contacto</a>
+                    <?php
+                    $menu_items = array(
+                        array('label' => 'Inicio', 'url' => home_url('#inicio')),
+                        array('label' => 'Institucional', 'url' => home_url('#institucional')),
+                        array('label' => 'Líneas de acción', 'url' => home_url('#lineas')),
+                        array('label' => 'Integrantes', 'url' => home_url('#integrantes')),
+                        array('label' => 'Novedades', 'url' => home_url('#novedades')),
+                    );
+
+                    foreach ($menu_items as $item) {
+                        echo '<a href="' . esc_url($item['url']) . '" class="text-white/70 hover:text-[var(--color-primary)] px-3 py-2 text-sm font-400 transition-colors">' . esc_html($item['label']) . '</a>';
+                    }
+                    ?>
+                    <a href="<?php echo esc_url(home_url('#contacto')); ?>" class="ml-2 bg-[var(--color-primary)] hover:bg-[#B8923A] text-[var(--color-base)] px-4 py-2 text-sm font-600 transition-colors">Contacto</a>
                 </nav>
 
                 <button id="menuBtn" class="lg:hidden text-white p-2  hover:bg-white/10 transition-colors">
@@ -54,12 +60,12 @@
             </div>
 
             <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-1">
-                <a href="#inicio" class="text-white/80 py-2 text-sm font-400">Inicio</a>
-                <a href="#institucional" class="text-white/80 py-2 text-sm font-400">Institucional</a>
-                <a href="#lineas" class="text-white/80 py-2 text-sm font-400">Líneas de acción</a>
-                <a href="#integrantes" class="text-white/80 py-2 text-sm font-400">Integrantes</a>
-                <a href="#novedades" class="text-white/80 py-2 text-sm font-400">Novedades</a>
-                <a href="#contacto" class="text-[var(--color-primary)] py-2 text-sm font-600">Contacto</a>
+                <a href="<?php echo esc_url(home_url('#inicio')); ?>" class="text-white/80 py-2 text-sm font-400">Inicio</a>
+                <a href="<?php echo esc_url(home_url('#institucional')); ?>" class="text-white/80 py-2 text-sm font-400">Institucional</a>
+                <a href="<?php echo esc_url(home_url('#lineas')); ?>" class="text-white/80 py-2 text-sm font-400">Líneas de acción</a>
+                <a href="<?php echo esc_url(home_url('#integrantes')); ?>" class="text-white/80 py-2 text-sm font-400">Integrantes</a>
+                <a href="<?php echo esc_url(home_url('#novedades')); ?>" class="text-white/80 py-2 text-sm font-400">Novedades</a>
+                <a href="<?php echo esc_url(home_url('#contacto')); ?>" class="text-[var(--color-primary)] py-2 text-sm font-600">Contacto</a>
             </div>
         </div>
     </header>

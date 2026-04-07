@@ -346,7 +346,7 @@ get_header(); ?>
 
                 $args_agenda = array(
                     'post_type'      => 'evento',
-                    'posts_per_page' => 3,
+                    'posts_per_page' => 6,
                     'meta_key'       => 'fecha_del_evento',
                     'orderby'        => 'meta_value',
                     'order'          => 'ASC',
