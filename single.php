@@ -4,7 +4,7 @@ get_header(); ?>
 
 <main class="bg-white min-h-screen">
     <?php
-    // Iniciamos el "Loop" de WordPress
+
     if (have_posts()) :
         while (have_posts()) : the_post();
     ?>
@@ -19,7 +19,7 @@ get_header(); ?>
                         <div class="inline-flex items-center justify-center gap-2 mb-6">
                             <span class="bg-[var(--color-primary)] text-[var(--color-base)] text-xs font-700 px-3 py-1 rounded-full uppercase tracking-widest shadow-sm">
                                 <?php
-                                // Obtenemos la primera categoría asignada al post
+
                                 $categories = get_the_category();
                                 if (! empty($categories)) {
                                     echo esc_html($categories[0]->name);
@@ -47,7 +47,7 @@ get_header(); ?>
                     <div class="max-w-5xl mx-auto px-6 -mt-8 relative z-20">
                         <div class="aspect-[21/9] md:aspect-[21/7] overflow-hidden shadow-2xl border border-white bg-stone-100">
                             <?php
-                           
+
                             the_post_thumbnail('large', array('class' => 'w-full h-full object-cover'));
                             ?>
                         </div>
