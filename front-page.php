@@ -18,6 +18,8 @@ get_header(); ?>
         <div class="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16 w-full">
             <div class="grid lg:grid-cols-2 gap-16 items-center min-h-[85vh]">
 
+
+            
                 <div class="flex flex-col justify-center">
                     <div class="inline-flex items-center gap-2 mb-8"></div>
 
