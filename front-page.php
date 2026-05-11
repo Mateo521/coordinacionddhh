@@ -8,7 +8,6 @@ get_header(); ?>
             <div class="absolute top-0 right-0 w-[700px] h-[700px] rounded-full bg-[var(--color-primary)] translate-x-1/3 -translate-y-1/3"></div>
             <div class="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[var(--color-primary)] -translate-x-1/3 translate-y-1/3"></div>
         </div>
-
         <div class="absolute inset-0 opacity-[0.04]">
             <div class="absolute top-1/4 left-0 right-0 h-px bg-white"></div>
             <div class="absolute top-2/4 left-0 right-0 h-px bg-white"></div>
@@ -17,58 +16,48 @@ get_header(); ?>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16 w-full">
             <div class="grid lg:grid-cols-2 gap-16 items-center min-h-[85vh]">
-
-
-            
                 <div class="flex flex-col justify-center">
                     <div class="inline-flex items-center gap-2 mb-8"></div>
-
                     <blockquote class="mb-8">
                         <div class="text-[var(--color-primary)] text-4xl font-300 leading-none mb-4 select-none">&ldquo;</div>
                         <p class="text-white text-2xl lg:text-3xl font-300 leading-relaxed tracking-wide">
-                            <?php
-
-                            $cita = get_field('cita_hero');
-                            if ($cita) {
-                                echo wp_kses_post($cita);
-                            } else {
-                                echo 'Nuestra universidad dejará de ser una isla extraña en el pueblo donde se haya inserta, para convertirse en <span class="font-700 text-[var(--color-primary)]">alma y nervio</span> de su comunidad.';
-                            }
-                            ?>
+                            Nuestra universidad dejará de ser una isla extraña en el pueblo donde se haya inserta, para convertirse en
+                            <span class="font-700 text-[var(--color-primary)]">alma y nervio</span>
+                            de su comunidad.
                         </p>
                         <div class="text-[var(--color-primary)] text-4xl font-300 leading-none mt-4 text-right select-none">&rdquo;</div>
                     </blockquote>
 
                     <div class="flex items-center gap-4 mb-12">
                         <div>
-                            <div class="text-white font-600 text-base">
-                                <?php echo get_field('autor_hero') ?: 'Mauricio Amilcar López'; ?>
-                            </div>
-                            <div class="text-white/50 text-sm font-300">
-                                <?php echo get_field('descripcion_autor_hero') ?: 'Primer rector de la UNSL · Defensor de los derechos humanos'; ?>
-                            </div>
+                            <div class="text-white font-600 text-base">Mauricio Amilcar López</div>
+                            <div class="text-white/50 text-sm font-300">Primer rector de la UNSL · Defensor de los derechos humanos</div>
                         </div>
                     </div>
 
                     <div class="flex flex-wrap gap-3">
-                        <a href="#institucional" class="bg-[var(--color-primary)] hover:bg-[#B8923A] text-[var(--color-base)] px-6 py-3  font-600 text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">Conocer más</a>
-                        <a href="#lineas" class="border border-white/30 hover:border-[var(--color-primary)] text-white hover:text-[var(--color-primary)] px-6 py-3  font-400 text-sm transition-all duration-200">Líneas de acción</a>
+                        <a href="#institucional" class="bg-[var(--color-primary)] hover:bg-[#B8923A] text-[var(--color-base)] px-6 py-3 font-600 text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+                            Conocer más
+                        </a>
+                        <a href="#lineas" class="border border-white/30 hover:border-[var(--color-primary)] text-white hover:text-[var(--color-primary)] px-6 py-3 font-400 text-sm transition-all duration-200">
+                            Líneas de acción
+                        </a>
                     </div>
                 </div>
 
                 <div class="relative flex justify-center lg:justify-end">
                     <div class="absolute -top-4 -right-4 w-full max-w-sm h-full border border-[var(--color-primary)]/20 "></div>
-                    <div class="relative w-full max-w-md  overflow-hidden shadow-2xl aspect-[3/4] bg-gradient-to-br from-[#1a2f54] to-[#0a1628] flex flex-col items-center justify-center border border-white/10">
+                    <div class="relative w-full max-w-sm overflow-hidden shadow-2xl aspect-[3/4] bg-gradient-to-br from-[#1a2f54] to-[#0a1628] flex flex-col items-center justify-center border border-white/10">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/Mauricio-Amilcar-Lopez.jpg" class="size-full absolute top-0 left-0" alt="Mauricio Amilcar López">
                         <div class="text-white/30 text-sm font-300 text-center px-8 leading-relaxed">
                             Foto de<br />Mauricio Amilcar López
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6 bg-white/5 backdrop-blur border border-white/10  px-4 py-3">
+                        <div class="absolute bottom-6 left-6 right-6 bg-white/5 backdrop-blur border border-white/10 px-4 py-3">
                             <div class="text-white text-xs font-600 tracking-widest uppercase mb-0.5">Primer Rector</div>
                             <div class="text-white text-sm font-400">Universidad Nacional de San Luis</div>
                         </div>
                     </div>
-                    <div class="absolute -bottom-4 -left-4 bg-[var(--color-primary)]  px-4 py-3 shadow-xl">
+                    <div class="absolute -bottom-4 -left-4 bg-[var(--color-primary)] px-4 py-3 shadow-xl">
                         <div class="text-[var(--color-base)] text-xs font-700 tracking-widest uppercase">DDHH UNSL</div>
                     </div>
                 </div>
@@ -77,6 +66,50 @@ get_header(); ?>
     </section>
 
     <section class="bg-white border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <a href="#normativa" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
+                    <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <span class="text-xs font-600 text-[#1A1C2E] group-hover:text-[var(--color-primary)] transition-colors leading-snug">Ordenanza OR‑16/2022</span>
+                </a>
+                <a href="#normativa" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
+                    <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <span class="text-xs font-600 text-[#1A1C2E] group-hover:text-[var(--color-primary)] transition-colors leading-snug">Ordenanza OR 8‑2025</span>
+                </a>
+                <a href="#integrantes" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
+                    <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" />
+                        </svg>
+                    </div>
+                    <span class="text-xs font-600 text-[#1A1C2E] group-hover:text-[var(--color-primary)] transition-colors leading-snug">Integrantes de la Comisión</span>
+                </a>
+                <a href="#lineas" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
+                    <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <span class="text-xs font-600 text-[#1A1C2E] group-hover:text-[var(--color-primary)] transition-colors leading-snug">Líneas de Acción</span>
+                </a>
+                <a href="#contacto" class="group flex flex-col items-center gap-3 p-5 bg-[var(--color-base)] hover:bg-[#1a2f54] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md col-span-2 md:col-span-1">
+                    <div class="w-10 h-10 bg-white/10 flex items-center justify-center">
+                        <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <span class="text-xs font-600 text-white leading-snug">Contacto</span>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section id="institucional" class="py-24 bg-[#F5F3EE]">
@@ -84,59 +117,78 @@ get_header(); ?>
             <div class="grid lg:grid-cols-3 gap-12 mb-16">
                 <div class="lg:col-span-1">
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600  uppercase">Institucional</span>
+                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Institucional</span>
                     </div>
                     <h2 class="text-4xl font-800 text-[var(--color-base)] leading-tight">Quiénes<br />Somos</h2>
                 </div>
                 <div class="lg:col-span-2 flex items-center">
                     <p class="text-lg font-300 text-[#3D3F52] leading-relaxed">
-                        <?php echo get_field('texto_principal_institucional') ?: 'La Coordinación General de Derechos Humanos de la UNSL es un espacio institucional transversal, participativo y permanente orientado a fortalecer el compromiso de la universidad pública con la promoción, defensa y garantía de los derechos humanos en la vida universitaria y su proyección social.'; ?>
+                        La Coordinación General de Derechos Humanos de la UNSL es un espacio institucional transversal, participativo y permanente orientado a fortalecer el compromiso de la universidad pública con la promoción, defensa y garantía de los derechos humanos en la vida universitaria y su proyección social.
                     </p>
                 </div>
             </div>
-
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white  p-8 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                <div class="bg-white p-8 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
                     <h3 class="text-lg font-700 text-[var(--color-base)] mb-3">Presentación</h3>
                     <p class="text-sm font-400 text-[#555770] leading-relaxed">
-                        <?php echo get_field('texto_presentacion') ?: 'La Coordinación General se constituye como un espacio que reafirma el compromiso histórico de la universidad pública argentina con la democracia, la memoria, la verdad y la justicia.'; ?>
+                        La Coordinación General se constituye como un espacio que reafirma el compromiso histórico de la universidad pública argentina con la democracia, la memoria, la verdad y la justicia.
                     </p>
-                    <a href="#" class="inline-flex items-center gap-1 mt-4 text-[var(--color-primary)] text-sm font-600 hover:gap-2 transition-all">Leer más <span>→</span></a>
                 </div>
-
-                <div class="bg-white  p-8 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                <div class="bg-white p-8 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
                     <h3 class="text-lg font-700 text-[var(--color-base)] mb-3">Fundamentación</h3>
                     <p class="text-sm font-400 text-[#555770] leading-relaxed">
-                        <?php echo get_field('texto_fundamentacion') ?: 'La creación de la Coordinación se inscribe en la tradición de la universidad pública argentina que asume un rol activo frente a los desafíos democráticos de cada época histórica.'; ?>
+                        La creación de la Coordinación se inscribe en la tradición de la universidad pública argentina que asume un rol activo frente a los desafíos democráticos de cada época histórica.
                     </p>
-                    <a href="#" class="inline-flex items-center gap-1 mt-4 text-[var(--color-primary)] text-sm font-600 hover:gap-2 transition-all">Leer más <span>→</span></a>
                 </div>
-
-                <div class="bg-white  p-8 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                <div class="bg-white p-8 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
                     <h3 class="text-lg font-700 text-[var(--color-base)] mb-3">Misión</h3>
                     <p class="text-sm font-400 text-[#555770] leading-relaxed">
-                        <?php echo get_field('texto_mision') ?: 'Promover la construcción de un saber y un hacer institucional que garantice la vigencia de los Derechos Humanos, articulando acciones con actores del medio local, regional, nacional e internacional.'; ?>
+                        Promover la construcción de un saber y un hacer institucional que garantice la vigencia de los Derechos Humanos, articulando acciones con actores del medio local, regional, nacional e internacional.
                     </p>
-                    <a href="#" class="inline-flex items-center gap-1 mt-4 text-[var(--color-primary)] text-sm font-600 hover:gap-2 transition-all">Leer más <span>→</span></a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="normativa" class="bg-[var(--color-base)] py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+                <div>
+                    <div class="inline-flex items-center gap-2 mb-3">
+                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Marco Normativo</span>
+                    </div>
+                    <h3 class="text-2xl font-700 text-white">Documentos oficiales de referencia</h3>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#" class="bg-white/10 hover:bg-[var(--color-primary)] border border-white/20 hover:border-[var(--color-primary)] text-white hover:text-[var(--color-base)] px-5 py-3 text-sm font-500 transition-all duration-200 flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg> OR‑16/2022
+                    </a>
+                    <a href="#" class="bg-white/10 hover:bg-[var(--color-primary)] border border-white/20 hover:border-[var(--color-primary)] text-white hover:text-[var(--color-base)] px-5 py-3 text-sm font-500 transition-all duration-200 flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg> OR 8‑2025
+                    </a>
+                    <a href="#" class="bg-white/10 hover:bg-[var(--color-primary)] border border-white/20 hover:border-[var(--color-primary)] text-white hover:text-[var(--color-base)] px-5 py-3 text-sm font-500 transition-all duration-200 flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg> Acuerdo CIN 1169/22
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="lineas" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <div class="inline-flex items-center gap-2 mb-4">
-                    <span class="text-[var(--color-primary)] text-xs font-600  uppercase">
-                        <?php echo get_field('lineas_subtitulo') ?: 'Nuestro trabajo'; ?>
-                    </span>
+                    <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Nuestro trabajo</span>
                 </div>
-                <h2 class="text-4xl font-800 text-[var(--color-base)]">
-                    <?php echo get_field('lineas_titulo') ?: 'Líneas de acción'; ?>
-                </h2>
+                <h2 class="text-4xl font-800 text-[var(--color-base)]">Líneas de acción</h2>
                 <p class="mt-4 text-[#555770] font-300 max-w-2xl mx-auto">
-                    <?php echo get_field('lineas_descripcion') ?: 'Tres ejes estratégicos que articulan el trabajo de la Coordinación General en el ámbito universitario y su proyección social.'; ?>
+                    Tres ejes estratégicos que articulan el trabajo de la Coordinación General en el ámbito universitario y su proyección social.
                 </p>
             </div>
 
@@ -144,27 +196,57 @@ get_header(); ?>
                 <div class="relative overflow-hidden group">
                     <div class="bg-[var(--color-base)] p-8 h-full border border-[var(--color-base)]/10 hover:shadow-xl transition-all duration-300">
                         <h3 class="text-xl font-700 text-white mb-4">Memoria de la Historia Reciente</h3>
-                        <div class="space-y-3 text-sm text-white/60 font-300">
-                            <?php echo get_field('lineas_c1_contenido') ?: '<ul><li>Restitución de legajos</li><li>Agenda colectiva a 50 años de la dictadura</li></ul>'; ?>
-                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-white/60 font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Restitución de legajos
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-white/60 font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Agenda colectiva a 50 años de la dictadura
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-white/60 font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Sitios de memoria (Galería, Pasillo, Aula Frum…)
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-white/60 font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Ciclo de entrevistas a sobrevivientes
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="relative overflow-hidden group">
                     <div class="bg-[var(--color-primary)] p-8 h-full hover:shadow-xl transition-all duration-300">
                         <h3 class="text-xl font-700 text-[var(--color-base)] mb-4">DDHH en el Presente Histórico</h3>
-                        <div class="space-y-3 text-sm text-[var(--color-base)]/70 font-300">
-                            <?php echo get_field('lineas_c2_contenido') ?: '<ul><li>Género y diversidades</li><li>Contexto de encierro</li></ul>'; ?>
-                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-[var(--color-base)]/70 font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)] mt-1.5 shrink-0"></span> Género y diversidades
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-[var(--color-base)]/70 font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)] mt-1.5 shrink-0"></span> Contexto de encierro
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-[var(--color-base)]/70 font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)] mt-1.5 shrink-0"></span> Interculturalidad
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-[var(--color-base)]/70 font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)] mt-1.5 shrink-0"></span> Ciclo "Conversaciones Impostergables"
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="relative overflow-hidden group">
                     <div class="bg-[#F5F3EE] p-8 h-full border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-xl transition-all duration-300">
                         <h3 class="text-xl font-700 text-[var(--color-base)] mb-4">Curricularización de los DDHH</h3>
-                        <div class="space-y-3 text-sm text-[#555770] font-300">
-                            <?php echo get_field('lineas_c3_contenido') ?: '<ul><li>Implementación del Acuerdo Plenario 1169/22</li><li>Espacios de formación</li></ul>'; ?>
-                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-[#555770] font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Implementación del Acuerdo Plenario 1169/22
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-[#555770] font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Espacios de formación
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-[#555770] font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Producción de materiales pedagógicos
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -176,31 +258,43 @@ get_header(); ?>
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600  uppercase">Propósitos</span>
+                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Propósitos</span>
                     </div>
-                    <h2 class="text-3xl font-800 text-[var(--color-base)] leading-tight mb-8">
-                        <?php echo get_field('propositos_titulo') ?: 'Nuestros compromisos<br />con la comunidad'; ?>
-                    </h2>
+                    <h2 class="text-3xl font-800 text-[var(--color-base)] leading-tight mb-8">Nuestros compromisos<br />con la comunidad</h2>
                     <div class="space-y-5">
                         <div class="flex items-start gap-4">
-                            <div class="w-8 h-8  bg-[var(--color-primary)] flex items-center justify-center shrink-0 mt-0.5">
+                            <div class="w-8 h-8 bg-[var(--color-primary)] flex items-center justify-center shrink-0 mt-0.5">
                                 <svg class="w-4 h-4 text-[var(--color-base)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
                                 </svg>
                             </div>
-                            <p class="text-sm font-400 text-[#555770] leading-relaxed">
-                                <?php echo get_field('propositos_item_1') ?: 'Contribuir a la construcción colectiva de la memoria del pasado reciente...'; ?>
-                            </p>
+                            <p class="text-sm font-400 text-[#555770] leading-relaxed">Contribuir a la construcción colectiva de la memoria del pasado reciente, promoviendo una lectura crítica de la última dictadura cívico-militar-eclesiástico-empresarial.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-[var(--color-primary)] flex items-center justify-center shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-[var(--color-base)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="text-sm font-400 text-[#555770] leading-relaxed">Intervenir activamente en la promoción, defensa y ampliación de los derechos humanos en el contexto actual, reconociendo los nuevos desafíos democráticos.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-[var(--color-primary)] flex items-center justify-center shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-[var(--color-base)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <p class="text-sm font-400 text-[#555770] leading-relaxed">Integrar transversalmente la perspectiva de derechos humanos en los procesos de enseñanza, aprendizaje e investigación universitaria.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-[var(--color-base)]  p-10 relative overflow-hidden">
+                <div class="bg-[var(--color-base)] p-10 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-[var(--color-primary)]/5 rounded-full translate-x-1/2 -translate-y-1/2"></div>
                     <div class="relative z-10">
                         <div class="text-[var(--color-primary)] text-5xl font-300 leading-none mb-4">&ldquo;</div>
                         <p class="text-white/80 text-base font-300 leading-relaxed mb-6">
-                            <?php echo get_field('propositos_cita_texto') ?: 'Sostener hoy una Coordinación General de Derechos Humanos implica honrar el legado de Mauricio López y proyectarlo hacia el presente.'; ?>
+                            Sostener hoy una Coordinación General de Derechos Humanos implica honrar el legado de Mauricio López y proyectarlo hacia el presente. Significa reafirmar que la universidad no es un espacio neutral.
                         </p>
                         <div class="flex items-center gap-3">
                             <div class="w-8 h-px bg-[var(--color-primary)]"></div>
@@ -217,19 +311,14 @@ get_header(); ?>
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600  uppercase">Comisión 2025–2028</span>
+                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Comisión 2025–2028</span>
                     </div>
                     <h2 class="text-4xl font-800 text-[var(--color-base)]">Integrantes</h2>
                 </div>
-
-                <div class="bg-[#F5F3EE]  px-6 py-4 border border-stone-200">
+                <div class="bg-[#F5F3EE] px-6 py-4 border border-stone-200">
                     <div class="text-xs text-[#555770] font-400 mb-1">Coordinación General</div>
-                    <div class="text-[var(--color-base)] font-700">
-                        <?php echo get_field('integrantes_coord_nombre') ?: 'Paola Figueroa'; ?>
-                    </div>
-                    <div class="text-[var(--color-primary)] text-xs font-400">
-                        <?php echo get_field('integrantes_coord_cargo') ?: 'Coordinadora General de DDHH UNSL'; ?>
-                    </div>
+                    <div class="text-[var(--color-base)] font-700">Paola Figueroa</div>
+                    <div class="text-[var(--color-primary)] text-xs font-400">Coordinadora General de DDHH UNSL</div>
                 </div>
             </div>
 
@@ -242,6 +331,116 @@ get_header(); ?>
                             <span class="text-sm font-500 text-[var(--color-base)]">Comelli Celi, Laura Valentina</span>
                             <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
                         </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
+                            <span class="text-sm font-400 text-[#555770]">Sosa, Pamela Soledad</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
+                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Fac. Ciencias Económicas y Sociales</div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
+                            <span class="text-sm font-500 text-[var(--color-base)]">Eliana Carla Pradel</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
+                            <span class="text-sm font-400 text-[#555770]">Julieta Del Sagrado Corazón Mercau</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
+                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Facultad de Psicología</div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
+                            <span class="text-sm font-500 text-[var(--color-base)]">Dr. Rodolfo Parisi</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
+                            <span class="text-sm font-400 text-[#555770]">Lic. Baglione Florencia Graciela</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
+                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Facultad de Ciencias Humanas</div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
+                            <span class="text-sm font-500 text-[var(--color-base)]">Luciana Melto</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
+                            <span class="text-sm font-400 text-[#555770]">María Silvia Baldivieso</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
+                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Facultad de Turismo</div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
+                            <span class="text-sm font-500 text-[var(--color-base)]">Dra. Ana Laura Cesar</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
+                            <span class="text-sm font-400 text-[#555770]">Lic. Lucía Villarroel</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
+                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Facultad de Salud</div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
+                            <span class="text-sm font-500 text-[var(--color-base)]">Esp. José Luis Martínez</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
+                            <span class="text-sm font-400 text-[#555770]">Mgter. Luciana Natalia Di Menza</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
+                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Fac. Química, Bioquímica y Farmacia</div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
+                            <span class="text-sm font-500 text-[var(--color-base)]">Seguin, Leonardo Roque</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
+                            <span class="text-sm font-400 text-[#555770]">Jerez, Maria Belen</span>
+                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[var(--color-base)] p-6 border border-[var(--color-base)] md:col-span-2 lg:col-span-2">
+                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Representantes ante la RIDH · Red Interuniversitaria de DDHH del CIN</div>
+                    <div class="grid sm:grid-cols-2 gap-4 mt-4">
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)]"></span>
+                            <span class="text-sm font-500 text-white">Clotilde De Pauw</span>
+                            <span class="ml-auto text-xs text-[var(--color-primary)] bg-[var(--color-primary)]/10 px-2 py-0.5 rounded-full border border-[var(--color-primary)]/20">Titular</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-white/30"></span>
+                            <span class="text-sm font-400 text-white/70">Paola Figueroa</span>
+                            <span class="ml-auto text-xs text-white/50 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">Suplente</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,7 +452,7 @@ get_header(); ?>
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600  uppercase">Agenda y Noticias</span>
+                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Agenda y Noticias</span>
                     </div>
                     <h2 class="text-4xl font-800 text-[var(--color-base)]">Novedades y Actividades</h2>
                 </div>
@@ -264,7 +463,6 @@ get_header(); ?>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <?php
-
                 $args = array(
                     'post_type'      => 'post',
                     'posts_per_page' => 3,
@@ -276,7 +474,6 @@ get_header(); ?>
                     while ($novedades->have_posts()) : $novedades->the_post(); ?>
 
                         <article class="bg-white overflow-hidden border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group flex flex-col">
-
                             <div class="bg-[var(--color-base)] h-44 relative overflow-hidden flex-shrink-0">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <?php the_post_thumbnail('medium_large', array('class' => 'absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen transition-transform duration-500 group-hover:scale-105')); ?>
@@ -317,11 +514,8 @@ get_header(); ?>
         </div>
     </section>
 
-
-
     <section id="agenda-actividades" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-
             <div class="mb-10 border-b border-stone-200 pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-2">
@@ -340,12 +534,8 @@ get_header(); ?>
             </div>
 
             <div class="flex flex-col gap-4">
-
                 <?php
-
                 $hoy = current_time('Ymd');
-
-
                 $args_agenda = array(
                     'post_type'      => 'evento',
                     'posts_per_page' => 6,
@@ -366,12 +556,10 @@ get_header(); ?>
                 if ($agenda_front->have_posts()) :
                     while ($agenda_front->have_posts()) : $agenda_front->the_post();
 
-
                         $fecha_cruda = get_field('fecha_del_evento');
                         $hora = get_field('hora_evento');
                         $lugar = get_field('lugar_evento');
                         $organizador = get_field('organizador_evento');
-
 
                         if ($fecha_cruda) {
                             $timestamp = strtotime($fecha_cruda);
@@ -381,7 +569,6 @@ get_header(); ?>
                             $dia_numero = '--';
                             $mes_corto = '---';
                         }
-
 
                         $terms = get_the_terms(get_the_ID(), 'categoria_evento');
                         $bg_fecha = 'bg-[var(--color-base)]';
@@ -403,7 +590,6 @@ get_header(); ?>
                 ?>
 
                         <article class="flex flex-col md:flex-row bg-[#F5F3EE] border border-stone-200 hover:border-[var(--color-primary)]/60 transition-all duration-300 group">
-
                             <div class="<?php echo $bg_fecha; ?> <?php echo $hover_bg; ?> text-white p-6 md:w-40 flex flex-col justify-center items-center shrink-0 transition-colors">
                                 <span class="text-4xl font-800 leading-none mb-1"><?php echo $dia_numero; ?></span>
                                 <span class="text-xs uppercase tracking-widest font-600"><?php echo $mes_corto; ?></span>
@@ -419,7 +605,6 @@ get_header(); ?>
                                 </p>
 
                                 <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs font-600 text-[#666]">
-
                                     <?php if ($hora): ?>
                                         <span class="flex items-center gap-1.5">
                                             <svg class="w-4 h-4 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -447,7 +632,6 @@ get_header(); ?>
                                             <?php echo esc_html($organizador); ?>
                                         </span>
                                     <?php endif; ?>
-
                                 </div>
                             </div>
                         </article>
@@ -456,15 +640,101 @@ get_header(); ?>
                     endwhile;
                     wp_reset_postdata();
                 else: ?>
-                    <div class="bg-[#FEF9EC] border border-[#C8A84B]/30 p-6 flex items-start gap-4">
-                        <p class="text-sm text-[#555770] font-300">Actualmente no hay actividades próximas programadas. Revisa más tarde para nuevas actualizaciones.</p>
+                    <div class="bg-[#FEF9EC] border border-[var(--color-primary)]/30 p-6 flex items-start gap-4">
+                        <p class="text-sm text-[#555770] font-300">Actualmente no hay actividades próximas programadas.</p>
                     </div>
                 <?php endif; ?>
-
             </div>
         </div>
     </section>
 
+    <section class="py-16 bg-white border-t border-stone-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="md:col-span-2 lg:col-span-1">
+                    <div class="inline-flex items-center gap-2 mb-3">
+                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Recursos</span>
+                    </div>
+                    <h3 class="text-2xl font-800 text-[var(--color-base)]">Documentos</h3>
+                    <p class="text-sm text-[#555770] font-300 mt-2 leading-relaxed">Accedé a resoluciones, documentos institucionales, materiales pedagógicos y publicaciones.</p>
+                </div>
+                <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
+                    <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors">Resoluciones</div>
+                        <div class="text-xs text-[#888]">Documentos normativos</div>
+                    </div>
+                </a>
+                <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
+                    <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors">Material pedagógico</div>
+                        <div class="text-xs text-[#888]">Para la formación</div>
+                    </div>
+                </a>
+                <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
+                    <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors">Publicaciones</div>
+                        <div class="text-xs text-[#888]">Investigación y difusión</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-[var(--color-base)] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full bg-[var(--color-primary)] translate-x-1/3 translate-y-1/3"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <div class="inline-flex items-center gap-2 mb-4">
+                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Contacto</span>
+                    </div>
+                    <h2 class="text-4xl font-800 text-white mb-8">Estamos para<br />escucharte</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-white/40 text-xs font-400 mb-0.5 uppercase tracking-widest">Correo institucional</div>
+                                <a href="mailto:unsl.coordinacionddhh@gmail.com" class="text-white font-500 hover:text-[var(--color-primary)] transition-colors">unsl.coordinacionddhh@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-white/40 text-xs font-400 mb-0.5 uppercase tracking-widest">Ubicación</div>
+                                <div class="text-white font-400 leading-relaxed">Av. Ejército de los Andes 950<br /><span class="text-white/60 text-sm">Segundo piso, Ala A — Rectorado UNSL</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </main>
 
