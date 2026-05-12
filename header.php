@@ -34,7 +34,7 @@
 
 
                 <a href="<?php echo home_url('#inicio'); ?>" class="flex items-center gap-3 group">
-                    <img class="h-18 py-2" src="<?php echo get_template_directory_uri(); ?>/images/logo-n-unsl.png" alt="<?php bloginfo('name'); ?>">
+                    <img class="h-20 py-3" src="<?php echo get_template_directory_uri(); ?>/images/logo-unsl.svg" alt="<?php bloginfo('name'); ?>">
                 </a>
 
 

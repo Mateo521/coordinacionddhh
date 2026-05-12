@@ -13,11 +13,11 @@ get_header(); ?>
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
             <div>
                 <div class="inline-flex items-center gap-2 mb-5">
-                    <span class="w-8 h-px bg-[var(--color-primary)]"></span>
-                    <span class="text-[var(--color-primary)] text-xs font-600 tracking-[0.25em] uppercase">Coordinación General de DDHH</span>
+                    <!--span class="w-8 h-px bg-[var(--color-primary)]"></span-->
+                    <span class="text-[var(--color-primary)] text-sm font-600  uppercase">Coordinación General de DDHH</span>
                 </div>
                 <h1 class="text-4xl lg:text-5xl font-900 text-white leading-none mb-3">
-                    Agenda <span class="text-[var(--color-primary)] font-300">Institucional</span>
+                    Agenda <span class="text-[var(--color-primary)] font-300">institucional</span>
                 </h1>
                 <p class="text-white/60 font-300 text-base max-w-xl leading-relaxed mt-4">
                     Cronograma oficial de actividades, ciclos de formación, encuentros culturales y jornadas de memoria organizadas o acompañadas por la Universidad.
@@ -26,19 +26,19 @@ get_header(); ?>
 
             <div class="flex flex-wrap gap-2" id="filtros">
                 <button data-cat="todos" onclick="filtrar(this)"
-                    class="filter-btn active px-4 py-2 rounded-full text-xs font-600 bg-[var(--color-primary)] text-[#0E1B35] transition-all">
+                    class="filter-btn active px-4 py-2 rounded-full text-sm font-600 bg-[var(--color-primary)] text-[#0E1B35] transition-all">
                     Todos
                 </button>
                 <button data-cat="memoria" onclick="filtrar(this)"
-                    class="filter-btn px-4 py-2 rounded-full text-xs font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
+                    class="filter-btn px-4 py-2 rounded-full text-sm font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
                     Memoria
                 </button>
                 <button data-cat="genero" onclick="filtrar(this)"
-                    class="filter-btn px-4 py-2 rounded-full text-xs font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
+                    class="filter-btn px-4 py-2 rounded-full text-sm font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
                     Género y Diversidad
                 </button>
                 <button data-cat="cultura" onclick="filtrar(this)"
-                    class="filter-btn px-4 py-2 rounded-full text-xs font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
+                    class="filter-btn px-4 py-2 rounded-full text-sm font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
                     Arte y Cultura
                 </button>
             </div>
@@ -132,18 +132,18 @@ get_header(); ?>
 
                             <div class="bg-stone-50 sm:w-32 shrink-0 flex flex-row sm:flex-col items-center justify-center py-4 sm:py-6 px-4 border-b sm:border-b-0 sm:border-r border-stone-200 gap-2 sm:gap-0">
                                 <div class="text-[#0E1B35] text-3xl sm:text-4xl font-800 leading-none"><?php echo $dia_numero; ?></div>
-                                <div class="text-[#888] text-xs font-500 uppercase tracking-widest sm:mt-1"><?php echo $mes_corto; ?></div>
-                                <div class="text-[#0E1B35]/40 text-xs font-400 sm:mt-2 hidden sm:block"><?php echo $dia_nombre; ?></div>
+                                <div class="text-[#888] text-sm font-500 uppercase  sm:mt-1"><?php echo $mes_corto; ?></div>
+                                <div class="text-[#0E1B35]/40 text-sm font-400 sm:mt-2 hidden sm:block"><?php echo $dia_nombre; ?></div>
                             </div>
 
                             <div class="flex-1 p-6 lg:p-8">
                                 <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
                                     <div class="flex flex-wrap gap-2 items-center">
-                                        <span class="<?php echo $badge_bg . ' ' . $badge_text; ?> text-xs font-600 px-3 py-1 rounded-full">
+                                        <span class="<?php echo $badge_bg . ' ' . $badge_text; ?> text-sm font-600 px-3 py-1 rounded-full">
                                             <?php echo esc_html($cat_name); ?>
                                         </span>
                                         <?php if ($hora): ?>
-                                            <span class="text-[#555770] text-xs font-500 flex items-center gap-1">
+                                            <span class="text-[#555770] text-sm font-500 flex items-center gap-1">
                                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                 </svg>
@@ -152,7 +152,7 @@ get_header(); ?>
                                         <?php endif; ?>
                                     </div>
                                     <?php if ($lugar): ?>
-                                        <span class="text-[#888] text-xs font-400 flex items-center gap-1">
+                                        <span class="text-[#888] text-sm font-400 flex items-center gap-1">
                                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -173,7 +173,7 @@ get_header(); ?>
                                 </div>
 
                                 <?php if ($organizador): ?>
-                                    <div class="flex items-center gap-1.5 text-xs text-[#888] font-400">
+                                    <div class="flex items-center gap-1.5 text-sm text-[#888] font-400">
                                         <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
                                         <?php echo esc_html($organizador); ?>
                                     </div>

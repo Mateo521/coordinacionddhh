@@ -1,8 +1,8 @@
 <footer class="bg-[#080F20] py-12">
     <div class="max-w-7xl mx-auto px-6">
       <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p class="text-white/20 text-xs">© <?php echo date('Y'); ?> Coordinación General de Derechos Humanos · UNSL</p>
-        <p class="text-white/20 text-xs">Av. Ejército de los Andes 950 · San Luis, Argentina</p>
+        <p class="text-white/20 text-sm">© <?php echo date('Y'); ?> Coordinación General de Derechos Humanos · UNSL</p>
+        <p class="text-white/20 text-sm">Av. Ejército de los Andes 950 · San Luis, Argentina</p>
       </div>
     </div>
   </footer>

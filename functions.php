@@ -39,3 +39,22 @@ function clases_li_menu($classes, $item, $args)
     return $classes;
 }
 add_filter('nav_menu_css_class', 'clases_li_menu', 10, 3);
+
+
+
+
+function ddhh_unsl_configuracion_tema() {
+    
+    add_theme_support( 'post-thumbnails' );
+    
+
+    add_theme_support( 'title-tag' );
+    
+
+    register_nav_menus( array(
+        'menu_principal' => 'Menú principal navegación'
+    ) );
+    
+}
+
+add_action( 'after_setup_theme', 'ddhh_unsl_configuracion_tema' );

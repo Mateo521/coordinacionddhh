@@ -19,19 +19,19 @@ get_header(); ?>
                 <div class="flex flex-col justify-center">
                     <div class="inline-flex items-center gap-2 mb-8"></div>
                     <blockquote class="mb-8">
-                        <div class="text-[var(--color-primary)] text-4xl font-300 leading-none mb-4 select-none">&ldquo;</div>
+                        <div class="text-[#007aa2] text-4xl font-300 leading-none mb-4 select-none">&ldquo;</div>
                         <p class="text-white text-2xl lg:text-3xl font-300 leading-relaxed tracking-wide">
                             Nuestra universidad dejará de ser una isla extraña en el pueblo donde se haya inserta, para convertirse en
                             <span class="font-700 text-[var(--color-primary)]">alma y nervio</span>
                             de su comunidad.
                         </p>
-                        <div class="text-[var(--color-primary)] text-4xl font-300 leading-none mt-4 text-right select-none">&rdquo;</div>
+                        <div class="text-[#007aa2] text-4xl font-300 leading-none mt-4 text-right select-none">&rdquo;</div>
                     </blockquote>
 
                     <div class="flex items-center gap-4 mb-12">
                         <div>
                             <div class="text-white font-600 text-base">Mauricio Amilcar López</div>
-                            <div class="text-white/50 text-sm font-300">Primer rector de la UNSL · Defensor de los derechos humanos</div>
+                            <div class="text-white text-sm font-300">Primer rector de la UNSL · Defensor de los derechos humanos</div>
                         </div>
                     </div>
 
@@ -39,7 +39,7 @@ get_header(); ?>
                         <a href="#institucional" class="bg-[var(--color-primary)] hover:bg-[#B8923A] text-[var(--color-base)] px-6 py-3 font-600 text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
                             Conocer más
                         </a>
-                        <a href="#lineas" class="border border-white/30 hover:border-[var(--color-primary)] text-white hover:text-[var(--color-primary)] px-6 py-3 font-400 text-sm transition-all duration-200">
+                        <a href="#lineas" class="border border-white/30 hover:border-[var(--color-primary)] text-white hover:text-[#007aa2] px-6 py-3 font-400 text-sm transition-all duration-200">
                             Líneas de acción
                         </a>
                     </div>
@@ -53,12 +53,12 @@ get_header(); ?>
                             Foto de<br />Mauricio Amilcar López
                         </div>
                         <div class="absolute bottom-6 left-6 right-6 bg-white/5 backdrop-blur border border-white/10 px-4 py-3">
-                            <div class="text-white text-xs font-600 tracking-widest uppercase mb-0.5">Primer Rector</div>
+                            <div class="text-white text-sm font-600  uppercase mb-0.5">Primer Rector</div>
                             <div class="text-white text-sm font-400">Universidad Nacional de San Luis</div>
                         </div>
                     </div>
                     <div class="absolute -bottom-4 -left-4 bg-[var(--color-primary)] px-4 py-3 shadow-xl">
-                        <div class="text-[var(--color-base)] text-xs font-700 tracking-widest uppercase">DDHH UNSL</div>
+                        <div class="text-[var(--color-base)] text-sm font-700  uppercase">DDHH UNSL</div>
                     </div>
                 </div>
             </div>
@@ -70,43 +70,43 @@ get_header(); ?>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 <a href="#normativa" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
-                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </div>
-                    <span class="text-xs font-600 text-[#1A1C2E] group-hover:text-[var(--color-primary)] transition-colors leading-snug">Ordenanza OR‑16/2022</span>
+                    <span class="text-sm font-600 text-[#1A1C2E] group-hover:text-[#007aa2] transition-colors leading-snug">Ordenanza OR‑16/2022</span>
                 </a>
                 <a href="#normativa" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
-                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </div>
-                    <span class="text-xs font-600 text-[#1A1C2E] group-hover:text-[var(--color-primary)] transition-colors leading-snug">Ordenanza OR 8‑2025</span>
+                    <span class="text-sm font-600 text-[#1A1C2E] group-hover:text-[#007aa2] transition-colors leading-snug">Ordenanza OR 8‑2025</span>
                 </a>
                 <a href="#integrantes" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
-                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" />
                         </svg>
                     </div>
-                    <span class="text-xs font-600 text-[#1A1C2E] group-hover:text-[var(--color-primary)] transition-colors leading-snug">Integrantes de la Comisión</span>
+                    <span class="text-sm font-600 text-[#1A1C2E] group-hover:text-[#007aa2] transition-colors leading-snug">Integrantes de la Comisión</span>
                 </a>
                 <a href="#lineas" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
-                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                         </svg>
                     </div>
-                    <span class="text-xs font-600 text-[#1A1C2E] group-hover:text-[var(--color-primary)] transition-colors leading-snug">Líneas de Acción</span>
+                    <span class="text-sm font-600 text-[#1A1C2E] group-hover:text-[#007aa2] transition-colors leading-snug">Líneas de Acción</span>
                 </a>
                 <a href="#contacto" class="group flex flex-col items-center gap-3 p-5 bg-[var(--color-base)] hover:bg-[#1a2f54] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md col-span-2 md:col-span-1">
                     <div class="w-10 h-10 bg-white/10 flex items-center justify-center">
-                        <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <span class="text-xs font-600 text-white leading-snug">Contacto</span>
+                    <span class="text-sm font-600 text-white leading-snug">Contacto</span>
                 </a>
             </div>
         </div>
@@ -117,7 +117,7 @@ get_header(); ?>
             <div class="grid lg:grid-cols-3 gap-12 mb-16">
                 <div class="lg:col-span-1">
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Institucional</span>
+                        <span class="text-[var(--color-primary)] text-sm font-600 uppercase">Institucional</span>
                     </div>
                     <h2 class="text-4xl font-800 text-[var(--color-base)] leading-tight">Quiénes<br />Somos</h2>
                 </div>
@@ -155,7 +155,7 @@ get_header(); ?>
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-3">
-                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Marco Normativo</span>
+                        <span class="text-[var(--color-primary)] text-sm font-600 uppercase">Marco Normativo</span>
                     </div>
                     <h3 class="text-2xl font-700 text-white">Documentos oficiales de referencia</h3>
                 </div>
@@ -184,7 +184,7 @@ get_header(); ?>
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <div class="inline-flex items-center gap-2 mb-4">
-                    <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Nuestro trabajo</span>
+                    <span class="text-[#007aa2] text-sm font-600 uppercase">Nuestro trabajo</span>
                 </div>
                 <h2 class="text-4xl font-800 text-[var(--color-base)]">Líneas de acción</h2>
                 <p class="mt-4 text-[#555770] font-300 max-w-2xl mx-auto">
@@ -207,7 +207,7 @@ get_header(); ?>
                                 <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Sitios de memoria (Galería, Pasillo, Aula Frum…)
                             </li>
                             <li class="flex items-start gap-3 text-sm text-white/60 font-300">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Ciclo de entrevistas a sobrevivientes
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Ciclo "Voces de memoria"
                             </li>
                         </ul>
                     </div>
@@ -258,7 +258,7 @@ get_header(); ?>
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Propósitos</span>
+                        <span class="text-[#007aa2] text-sm font-600 uppercase">Propósitos</span>
                     </div>
                     <h2 class="text-3xl font-800 text-[var(--color-base)] leading-tight mb-8">Nuestros compromisos<br />con la comunidad</h2>
                     <div class="space-y-5">
@@ -292,13 +292,13 @@ get_header(); ?>
                 <div class="bg-[var(--color-base)] p-10 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-[var(--color-primary)]/5 rounded-full translate-x-1/2 -translate-y-1/2"></div>
                     <div class="relative z-10">
-                        <div class="text-[var(--color-primary)] text-5xl font-300 leading-none mb-4">&ldquo;</div>
+                        <div class="text-[#007aa2] text-5xl font-300 leading-none mb-4">&ldquo;</div>
                         <p class="text-white/80 text-base font-300 leading-relaxed mb-6">
                             Sostener hoy una Coordinación General de Derechos Humanos implica honrar el legado de Mauricio López y proyectarlo hacia el presente. Significa reafirmar que la universidad no es un espacio neutral.
                         </p>
                         <div class="flex items-center gap-3">
                             <div class="w-8 h-px bg-[var(--color-primary)]"></div>
-                            <span class="text-[var(--color-primary)] text-xs font-500 tracking-widest uppercase">Fundamentación institucional</span>
+                            <span class="text-[#007aa2] text-sm font-500  uppercase">Fundamentación institucional</span>
                         </div>
                     </div>
                 </div>
@@ -311,135 +311,135 @@ get_header(); ?>
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Comisión 2025–2028</span>
+                        <span class="text-[#007aa2] text-sm font-600 uppercase">Comisión 2025–2028</span>
                     </div>
                     <h2 class="text-4xl font-800 text-[var(--color-base)]">Integrantes</h2>
                 </div>
                 <div class="bg-[#F5F3EE] px-6 py-4 border border-stone-200">
-                    <div class="text-xs text-[#555770] font-400 mb-1">Coordinación General</div>
+                    <div class="text-sm text-[#555770] font-400 mb-1">Coordinación General</div>
                     <div class="text-[var(--color-base)] font-700">Paola Figueroa</div>
-                    <div class="text-[var(--color-primary)] text-xs font-400">Coordinadora General de DDHH UNSL</div>
+                    <div class="text-[#007aa2] font-bold text-sm font-400">Coordinadora General de DDHH UNSL</div>
                 </div>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Escuela Normal Juan Pascual Pringles</div>
+                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Escuela Normal Juan Pascual Pringles</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
                             <span class="text-sm font-500 text-[var(--color-base)]">Comelli Celi, Laura Valentina</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Titular</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
                             <span class="text-sm font-400 text-[#555770]">Sosa, Pamela Soledad</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Suplente</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Fac. Ciencias Económicas y Sociales</div>
+                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Fac. Ciencias Económicas y Sociales</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
                             <span class="text-sm font-500 text-[var(--color-base)]">Eliana Carla Pradel</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Titular</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
                             <span class="text-sm font-400 text-[#555770]">Julieta Del Sagrado Corazón Mercau</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Suplente</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Facultad de Psicología</div>
+                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Facultad de Psicología</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
                             <span class="text-sm font-500 text-[var(--color-base)]">Dr. Rodolfo Parisi</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Titular</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
                             <span class="text-sm font-400 text-[#555770]">Lic. Baglione Florencia Graciela</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Suplente</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Facultad de Ciencias Humanas</div>
+                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Facultad de Ciencias Humanas</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
                             <span class="text-sm font-500 text-[var(--color-base)]">Luciana Melto</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Titular</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
                             <span class="text-sm font-400 text-[#555770]">María Silvia Baldivieso</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Suplente</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Facultad de Turismo</div>
+                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Facultad de Turismo</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
                             <span class="text-sm font-500 text-[var(--color-base)]">Dra. Ana Laura Cesar</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Titular</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
                             <span class="text-sm font-400 text-[#555770]">Lic. Lucía Villarroel</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Suplente</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Facultad de Salud</div>
+                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Facultad de Salud</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
                             <span class="text-sm font-500 text-[var(--color-base)]">Esp. José Luis Martínez</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Titular</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
                             <span class="text-sm font-400 text-[#555770]">Mgter. Luciana Natalia Di Menza</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Suplente</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Fac. Química, Bioquímica y Farmacia</div>
+                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Fac. Química, Bioquímica y Farmacia</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
                             <span class="text-sm font-500 text-[var(--color-base)]">Seguin, Leonardo Roque</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Titular</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Titular</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-stone-300"></span>
                             <span class="text-sm font-400 text-[#555770]">Jerez, Maria Belen</span>
-                            <span class="ml-auto text-xs text-[#888] bg-white px-2 py-0.5 rounded-full border">Suplente</span>
+                            <span class="ml-auto text-sm text-black bg-white px-2 py-0.5 rounded-full border">Suplente</span>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[var(--color-base)] p-6 border border-[var(--color-base)] md:col-span-2 lg:col-span-2">
-                    <div class="text-[var(--color-primary)] text-xs font-600 tracking-widest uppercase mb-3">Representantes ante la RIDH · Red Interuniversitaria de DDHH del CIN</div>
+                    <div class="text-gray-200 text-sm font-600 font-bold  uppercase mb-3">Representantes ante la RIDH · Red Interuniversitaria de DDHH del CIN</div>
                     <div class="grid sm:grid-cols-2 gap-4 mt-4">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)]"></span>
                             <span class="text-sm font-500 text-white">Clotilde De Pauw</span>
-                            <span class="ml-auto text-xs text-[var(--color-primary)] bg-[var(--color-primary)]/10 px-2 py-0.5 rounded-full border border-[var(--color-primary)]/20">Titular</span>
+                            <span class="ml-auto text-sm text-gray-200 bg-[var(--color-primary)]/10 px-2 py-0.5 rounded-full border border-[var(--color-primary)]/20">Titular</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-white/30"></span>
                             <span class="text-sm font-400 text-white/70">Paola Figueroa</span>
-                            <span class="ml-auto text-xs text-white/50 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">Suplente</span>
+                            <span class="ml-auto text-sm text-gray-200 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">Suplente</span>
                         </div>
                     </div>
                 </div>
@@ -452,11 +452,11 @@ get_header(); ?>
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Agenda y Noticias</span>
+                        <span class="text-[#007aa2] text-sm font-600 uppercase">Agenda y Noticias</span>
                     </div>
                     <h2 class="text-4xl font-800 text-[var(--color-base)]">Novedades y Actividades</h2>
                 </div>
-                <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="inline-flex items-center gap-2 text-[var(--color-base)] border-b border-[var(--color-primary)] pb-0.5 text-sm font-600 hover:text-[var(--color-primary)] transition-colors">
+                <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="inline-flex items-center gap-2 text-[var(--color-base)] border-b border-[var(--color-primary)] pb-0.5 text-sm font-600 hover:text-[#007aa2] transition-colors">
                     Ver todas <span>→</span>
                 </a>
             </div>
@@ -476,7 +476,7 @@ get_header(); ?>
                         <article class="bg-white overflow-hidden border border-stone-200 hover:border-[var(--color-primary)]/40 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group flex flex-col">
                             <div class="bg-[var(--color-base)] h-44 relative overflow-hidden flex-shrink-0">
                                 <?php if (has_post_thumbnail()) : ?>
-                                    <?php the_post_thumbnail('medium_large', array('class' => 'absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen transition-transform duration-500 group-hover:scale-105')); ?>
+                                    <?php the_post_thumbnail('medium_large', array('class' => 'absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-screen transition-transform duration-500')); ?>
                                 <?php else : ?>
                                     <div class="absolute inset-0 bg-gradient-to-br from-[#1a2f54] to-[#0a1628] flex items-center justify-center">
                                         <span class="text-white/10 text-7xl font-800">DDHH</span>
@@ -485,21 +485,21 @@ get_header(); ?>
 
                                 <?php $categories = get_the_category();
                                 if (! empty($categories)) { ?>
-                                    <div class="absolute top-4 left-4 bg-[var(--color-primary)] text-[var(--color-base)] text-xs font-700 px-3 py-1 rounded-full">
+                                    <div class="absolute top-4 left-4 bg-[var(--color-primary)] text-[var(--color-base)] text-sm font-700 px-3 py-1 rounded-full">
                                         <?php echo esc_html($categories[0]->name); ?>
                                     </div>
                                 <?php } ?>
                             </div>
 
                             <div class="p-6 flex flex-col flex-grow">
-                                <div class="text-[#888] text-xs font-400 mb-2"><?php echo get_the_date(); ?></div>
-                                <h4 class="text-base font-700 text-[var(--color-base)] mb-2 group-hover:text-[var(--color-primary)] transition-colors leading-snug">
+                                <div class="text-[#888] text-sm font-400 mb-2"><?php echo get_the_date(); ?></div>
+                                <h1 class="text-base font-700 text-[var(--color-base)] mb-2 group-hover:text-[#007aa2] transition-colors leading-snug">
                                     <?php the_title(); ?>
-                                </h4>
+                                </h1>
                                 <p class="text-sm text-[#555770] font-300 leading-relaxed mb-4 flex-grow">
                                     <?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?>
                                 </p>
-                                <a href="<?php the_permalink(); ?>" class="text-[var(--color-primary)] text-sm font-600 inline-flex items-center gap-1 hover:gap-2 transition-all mt-auto">
+                                <a href="<?php the_permalink(); ?>" class="text-[#007aa2] text-sm font-600 inline-flex items-center gap-1 hover:gap-2 transition-all mt-auto">
                                     Leer más <span>→</span>
                                 </a>
                             </div>
@@ -519,7 +519,7 @@ get_header(); ?>
             <div class="mb-10 border-b border-stone-200 pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-2">
-                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase tracking-wide">Próximas Actividades</span>
+                        <span class="text-[#007aa2] text-sm font-600 uppercase tracking-wide">Próximas Actividades</span>
                     </div>
                     <h2 class="text-3xl font-800 text-[var(--color-base)]">Agenda destacada</h2>
                 </div>
@@ -527,7 +527,7 @@ get_header(); ?>
                     <p class="text-[#555770] text-sm md:text-right max-w-sm">
                         Cronograma de actividades institucionales y eventos conmemorativos.
                     </p>
-                    <a href="<?php echo site_url('/agenda'); ?>" class="text-[var(--color-primary)] text-sm font-600 hover:text-[var(--color-base)] transition-colors inline-flex items-center gap-1">
+                    <a href="<?php echo site_url('/agenda'); ?>" class="text-[#007aa2] text-sm font-600 hover:text-[var(--color-base)] transition-colors inline-flex items-center gap-1">
                         Ver agenda completa <span>→</span>
                     </a>
                 </div>
@@ -592,11 +592,11 @@ get_header(); ?>
                         <article class="flex flex-col md:flex-row bg-[#F5F3EE] border border-stone-200 hover:border-[var(--color-primary)]/60 transition-all duration-300 group">
                             <div class="<?php echo $bg_fecha; ?> <?php echo $hover_bg; ?> text-white p-6 md:w-40 flex flex-col justify-center items-center shrink-0 transition-colors">
                                 <span class="text-4xl font-800 leading-none mb-1"><?php echo $dia_numero; ?></span>
-                                <span class="text-xs uppercase tracking-widest font-600"><?php echo $mes_corto; ?></span>
+                                <span class="text-sm uppercase  font-600"><?php echo $mes_corto; ?></span>
                             </div>
 
                             <div class="p-6 flex-1 flex flex-col justify-center">
-                                <h3 class="text-lg font-700 text-[var(--color-base)] mb-2 leading-snug group-hover:text-[var(--color-primary)] transition-colors">
+                                <h3 class="text-lg font-700 text-[var(--color-base)] mb-2 leading-snug group-hover:text-[#007aa2] transition-colors">
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </h3>
 
@@ -604,10 +604,10 @@ get_header(); ?>
                                     <?php echo wp_trim_words(get_the_excerpt() ?: get_the_content(), 20, '...'); ?>
                                 </p>
 
-                                <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs font-600 text-[#666]">
+                                <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-600 text-[#666]">
                                     <?php if ($hora): ?>
                                         <span class="flex items-center gap-1.5">
-                                            <svg class="w-4 h-4 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <svg class="w-4 h-4 text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                             </svg>
                                             <?php echo esc_html($hora); ?>
@@ -616,7 +616,7 @@ get_header(); ?>
 
                                     <?php if ($lugar): ?>
                                         <span class="flex items-center gap-1.5">
-                                            <svg class="w-4 h-4 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <svg class="w-4 h-4 text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                             </svg>
@@ -653,42 +653,42 @@ get_header(); ?>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="md:col-span-2 lg:col-span-1">
                     <div class="inline-flex items-center gap-2 mb-3">
-                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Recursos</span>
+                        <span class="text-[#007aa2] text-sm font-600 uppercase">Recursos</span>
                     </div>
                     <h3 class="text-2xl font-800 text-[var(--color-base)]">Documentos</h3>
                     <p class="text-sm text-[#555770] font-300 mt-2 leading-relaxed">Accedé a resoluciones, documentos institucionales, materiales pedagógicos y publicaciones.</p>
                 </div>
                 <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
-                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </div>
                     <div>
-                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors">Resoluciones</div>
-                        <div class="text-xs text-[#888]">Documentos normativos</div>
+                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors">Resoluciones</div>
+                        <div class="text-sm text-black">Documentos normativos</div>
                     </div>
                 </a>
                 <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
-                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
                     </div>
                     <div>
-                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors">Material pedagógico</div>
-                        <div class="text-xs text-[#888]">Para la formación</div>
+                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors">Material pedagógico</div>
+                        <div class="text-sm text-black">Para la formación</div>
                     </div>
                 </a>
                 <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
-                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>
                     </div>
                     <div>
-                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[var(--color-primary)] transition-colors">Publicaciones</div>
-                        <div class="text-xs text-[#888]">Investigación y difusión</div>
+                        <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors">Publicaciones</div>
+                        <div class="text-sm text-black">Investigación y difusión</div>
                     </div>
                 </a>
             </div>
@@ -703,30 +703,30 @@ get_header(); ?>
             <div class="grid lg:grid-cols-2 gap-16">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-xs font-600 uppercase">Contacto</span>
+                        <span class="text-white text-sm font-600 uppercase">Contacto</span>
                     </div>
                     <h2 class="text-4xl font-800 text-white mb-8">Estamos para<br />escucharte</h2>
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                                <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                             </div>
                             <div>
-                                <div class="text-white/40 text-xs font-400 mb-0.5 uppercase tracking-widest">Correo institucional</div>
-                                <a href="mailto:unsl.coordinacionddhh@gmail.com" class="text-white font-500 hover:text-[var(--color-primary)] transition-colors">unsl.coordinacionddhh@gmail.com</a>
+                                <div class="text-white text-sm font-400 mb-0.5 uppercase ">Correo institucional</div>
+                                <a href="mailto:unsl.coordinacionddhh@gmail.com" class="text-white font-500 hover:text-[#007aa2] transition-colors">unsl.coordinacionddhh@gmail.com</a>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                                <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
                             </div>
                             <div>
-                                <div class="text-white/40 text-xs font-400 mb-0.5 uppercase tracking-widest">Ubicación</div>
+                                <div class="text-white text-sm font-400 mb-0.5 uppercase ">Ubicación</div>
                                 <div class="text-white font-400 leading-relaxed">Av. Ejército de los Andes 950<br /><span class="text-white/60 text-sm">Segundo piso, Ala A — Rectorado UNSL</span></div>
                             </div>
                         </div>
