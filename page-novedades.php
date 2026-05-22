@@ -62,7 +62,7 @@ get_header(); ?>
 
                     <div class="bg-[var(--color-base)] h-44 relative overflow-hidden flex-shrink-0">
                         <?php if (has_post_thumbnail()) : ?>
-                            <?php the_post_thumbnail('medium_large', array('class' => 'absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen transition-transform duration-500 group-hover:scale-105')); ?>
+                            <?php the_post_thumbnail('medium_large', array('class' => 'absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen transition-transform duration-500')); ?>
                         <?php else : ?>
                             <div class="absolute inset-0 bg-gradient-to-br from-[#1a2f54] to-[#0a1628] flex items-center justify-center">
                                 <span class="text-white/10 text-7xl font-800">DDHH</span>

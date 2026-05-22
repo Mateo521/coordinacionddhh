@@ -117,9 +117,9 @@ get_header(); ?>
             <div class="grid lg:grid-cols-3 gap-12 mb-16">
                 <div class="lg:col-span-1">
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[var(--color-primary)] text-sm font-600 uppercase">Institucional</span>
+                        <span class="text-[var(--color-base)] text-sm font-600 uppercase">Institucional</span>
                     </div>
-                    <h2 class="text-4xl font-800 text-[var(--color-base)] leading-tight">Quiénes<br />Somos</h2>
+                    <h2 class="text-4xl font-800 text-[var(--color-base)] leading-tight">Quiénes<br />somos</h2>
                 </div>
                 <div class="lg:col-span-2 flex items-center">
                     <p class="text-lg font-300 text-[#3D3F52] leading-relaxed">
@@ -155,9 +155,9 @@ get_header(); ?>
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-3">
-                        <span class="text-[var(--color-primary)] text-sm font-600 uppercase">Marco Normativo</span>
+                        <span class="text-[var(--color-primary)] text-sm font-600 uppercase">Marco normativo</span>
                     </div>
-                    <h3 class="text-2xl font-700 text-white">Documentos oficiales de referencia</h3>
+                    <h3 class="text-2xl font-700 text-white">Documentos de referencia</h3>
                 </div>
                 <div class="flex flex-wrap gap-3">
                     <a href="#" class="bg-white/10 hover:bg-[var(--color-primary)] border border-white/20 hover:border-[var(--color-primary)] text-white hover:text-[var(--color-base)] px-5 py-3 text-sm font-500 transition-all duration-200 flex items-center gap-2">
@@ -184,7 +184,7 @@ get_header(); ?>
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <div class="inline-flex items-center gap-2 mb-4">
-                    <span class="text-[#007aa2] text-sm font-600 uppercase">Nuestro trabajo</span>
+                    <span class="text-[var(--color-base)] text-sm font-600 uppercase">Nuestro trabajo</span>
                 </div>
                 <h2 class="text-4xl font-800 text-[var(--color-base)]">Líneas de acción</h2>
                 <p class="mt-4 text-[#555770] font-300 max-w-2xl mx-auto">
@@ -197,16 +197,16 @@ get_header(); ?>
                     <div class="bg-[var(--color-base)] p-8 h-full border border-[var(--color-base)]/10 hover:shadow-xl transition-all duration-300">
                         <h3 class="text-xl font-700 text-white mb-4">Memoria de la Historia Reciente</h3>
                         <ul class="space-y-3">
-                            <li class="flex items-start gap-3 text-sm text-white/60 font-300">
+                            <li class="flex items-start gap-3 text-sm text-white font-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Restitución de legajos
                             </li>
-                            <li class="flex items-start gap-3 text-sm text-white/60 font-300">
+                            <li class="flex items-start gap-3 text-sm text-white font-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Agenda colectiva a 50 años de la dictadura
                             </li>
-                            <li class="flex items-start gap-3 text-sm text-white/60 font-300">
+                            <li class="flex items-start gap-3 text-sm text-white font-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Sitios de memoria (Galería, Pasillo, Aula Frum…)
                             </li>
-                            <li class="flex items-start gap-3 text-sm text-white/60 font-300">
+                            <li class="flex items-start gap-3 text-sm text-white font-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Ciclo "Voces de memoria"
                             </li>
                         </ul>
@@ -214,20 +214,20 @@ get_header(); ?>
                 </div>
 
                 <div class="relative overflow-hidden group">
-                    <div class="bg-[var(--color-primary)] p-8 h-full hover:shadow-xl transition-all duration-300">
-                        <h3 class="text-xl font-700 text-[var(--color-base)] mb-4">DDHH en el Presente Histórico</h3>
+                    <div class="bg-[#004358] p-8 h-full hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-700 text-white mb-4">DDHH en el Presente Histórico</h3>
                         <ul class="space-y-3">
-                            <li class="flex items-start gap-3 text-sm text-[var(--color-base)]/70 font-300">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)] mt-1.5 shrink-0"></span> Género y diversidades
+                            <li class="flex items-start gap-3 text-sm text-white font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Género y diversidades
                             </li>
-                            <li class="flex items-start gap-3 text-sm text-[var(--color-base)]/70 font-300">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)] mt-1.5 shrink-0"></span> Contexto de encierro
+                            <li class="flex items-start gap-3 text-sm text-white font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Contexto de encierro
                             </li>
-                            <li class="flex items-start gap-3 text-sm text-[var(--color-base)]/70 font-300">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)] mt-1.5 shrink-0"></span> Interculturalidad
+                            <li class="flex items-start gap-3 text-sm text-white font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Interculturalidad
                             </li>
-                            <li class="flex items-start gap-3 text-sm text-[var(--color-base)]/70 font-300">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)] mt-1.5 shrink-0"></span> Ciclo "Conversaciones Impostergables"
+                            <li class="flex items-start gap-3 text-sm text-white font-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)] mt-1.5 shrink-0"></span> Ciclo "Conversaciones Impostergables"
                             </li>
                         </ul>
                     </div>
@@ -258,7 +258,7 @@ get_header(); ?>
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[#007aa2] text-sm font-600 uppercase">Propósitos</span>
+                        <span class="text-[var(--color-base)] text-sm font-600 uppercase">Propósitos</span>
                     </div>
                     <h2 class="text-3xl font-800 text-[var(--color-base)] leading-tight mb-8">Nuestros compromisos<br />con la comunidad</h2>
                     <div class="space-y-5">
@@ -297,8 +297,8 @@ get_header(); ?>
                             Sostener hoy una Coordinación General de Derechos Humanos implica honrar el legado de Mauricio López y proyectarlo hacia el presente. Significa reafirmar que la universidad no es un espacio neutral.
                         </p>
                         <div class="flex items-center gap-3">
-                            <div class="w-8 h-px bg-[var(--color-primary)]"></div>
-                            <span class="text-[#007aa2] text-sm font-500  uppercase">Fundamentación institucional</span>
+                           
+                            <span class="text-gray-100 text-sm font-500  uppercase">Fundamentación institucional</span>
                         </div>
                     </div>
                 </div>
@@ -311,20 +311,20 @@ get_header(); ?>
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[#007aa2] text-sm font-600 uppercase">Comisión 2025–2028</span>
+                        <span class="text-[var(--color-base)] text-sm font-600 uppercase">Comisión 2025–2028</span>
                     </div>
                     <h2 class="text-4xl font-800 text-[var(--color-base)]">Integrantes</h2>
                 </div>
                 <div class="bg-[#F5F3EE] px-6 py-4 border border-stone-200">
                     <div class="text-sm text-[#555770] font-400 mb-1">Coordinación General</div>
                     <div class="text-[var(--color-base)] font-700">Paola Figueroa</div>
-                    <div class="text-[#007aa2] font-bold text-sm font-400">Coordinadora General de DDHH UNSL</div>
+                    <div class="text-[var(--color-base)] font-bold text-sm font-400">Coordinadora General de DDHH UNSL</div>
                 </div>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Escuela Normal Juan Pascual Pringles</div>
+                    <div class="text-[var(--color-base)] text-sm font-600 font-bold  uppercase mb-3">Escuela Normal Juan Pascual Pringles</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
@@ -339,7 +339,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Fac. Ciencias Económicas y Sociales</div>
+                    <div class="text-[var(--color-base)] text-sm font-600 font-bold  uppercase mb-3">Fac. Ciencias Económicas y Sociales</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
@@ -354,7 +354,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Facultad de Psicología</div>
+                    <div class="text-[var(--color-base)] text-sm font-600 font-bold  uppercase mb-3">Facultad de Psicología</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
@@ -369,7 +369,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Facultad de Ciencias Humanas</div>
+                    <div class="text-[var(--color-base)] text-sm font-600 font-bold  uppercase mb-3">Facultad de Ciencias Humanas</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
@@ -384,7 +384,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Facultad de Turismo</div>
+                    <div class="text-[var(--color-base)] text-sm font-600 font-bold  uppercase mb-3">Facultad de Turismo</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
@@ -399,7 +399,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Facultad de Salud</div>
+                    <div class="text-[var(--color-base)] text-sm font-600 font-bold  uppercase mb-3">Facultad de Salud</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
@@ -414,7 +414,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="bg-[#F5F3EE] p-6 border border-stone-200 hover:border-[var(--color-primary)]/40 transition-colors">
-                    <div class="text-black text-sm font-600 font-bold  uppercase mb-3">Fac. Química, Bioquímica y Farmacia</div>
+                    <div class="text-[var(--color-base)] text-sm font-600 font-bold  uppercase mb-3">Fac. Química, Bioquímica y Farmacia</div>
                     <div class="space-y-2">
                         <div class="flex items-center gap-2">
                             <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-base)]"></span>
@@ -452,9 +452,9 @@ get_header(); ?>
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-4">
-                        <span class="text-[#007aa2] text-sm font-600 uppercase">Agenda y Noticias</span>
+                        <span class="text-[var(--color-base)] text-sm font-600 uppercase">Agenda y noticias</span>
                     </div>
-                    <h2 class="text-4xl font-800 text-[var(--color-base)]">Novedades y Actividades</h2>
+                    <h2 class="text-4xl font-800 text-[var(--color-base)]">Novedades y actividades</h2>
                 </div>
                 <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="inline-flex items-center gap-2 text-[var(--color-base)] border-b border-[var(--color-primary)] pb-0.5 text-sm font-600 hover:text-[#007aa2] transition-colors">
                     Ver todas <span>→</span>
@@ -492,11 +492,11 @@ get_header(); ?>
                             </div>
 
                             <div class="p-6 flex flex-col flex-grow">
-                                <div class="text-[#888] text-sm font-400 mb-2"><?php echo get_the_date(); ?></div>
+                                <div class="text-gray-800 text-sm font-400 mb-2"><?php echo get_the_date(); ?></div>
                                 <h1 class="text-base font-700 text-[var(--color-base)] mb-2 group-hover:text-[#007aa2] transition-colors leading-snug">
                                     <?php the_title(); ?>
                                 </h1>
-                                <p class="text-sm text-[#555770] font-300 leading-relaxed mb-4 flex-grow">
+                                <p class="text-sm text-gray-800 font-300 leading-relaxed mb-4 flex-grow">
                                     <?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?>
                                 </p>
                                 <a href="<?php the_permalink(); ?>" class="text-[#007aa2] text-sm font-600 inline-flex items-center gap-1 hover:gap-2 transition-all mt-auto">
@@ -519,7 +519,7 @@ get_header(); ?>
             <div class="mb-10 border-b border-stone-200 pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
                 <div>
                     <div class="inline-flex items-center gap-2 mb-2">
-                        <span class="text-[#007aa2] text-sm font-600 uppercase tracking-wide">Próximas Actividades</span>
+                        <span class="text-[var(--color-base)] text-sm font-600 uppercase tracking-wide">Próximas Actividades</span>
                     </div>
                     <h2 class="text-3xl font-800 text-[var(--color-base)]">Agenda destacada</h2>
                 </div>
@@ -653,7 +653,7 @@ get_header(); ?>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="md:col-span-2 lg:col-span-1">
                     <div class="inline-flex items-center gap-2 mb-3">
-                        <span class="text-[#007aa2] text-sm font-600 uppercase">Recursos</span>
+                        <span class="text-[var(--color-base)] text-sm font-600 uppercase">Recursos</span>
                     </div>
                     <h3 class="text-2xl font-800 text-[var(--color-base)]">Documentos</h3>
                     <p class="text-sm text-[#555770] font-300 mt-2 leading-relaxed">Accedé a resoluciones, documentos institucionales, materiales pedagógicos y publicaciones.</p>

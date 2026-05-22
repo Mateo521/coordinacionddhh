@@ -13,7 +13,7 @@ get_header(); ?>
                 <header class="pt-32 pb-16 bg-[#F5F3EE] border-b border-stone-200 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-[var(--color-primary)] opacity-5 translate-x-1/2 -translate-y-1/2"></div>
 
-                    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+                    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
 
                         <div class="inline-flex items-center justify-center gap-2 mb-6">
                             <span class="bg-[var(--color-primary)] text-[var(--color-base)] text-sm font-700 px-3 py-1 rounded-full uppercase  shadow-sm">
@@ -39,7 +39,7 @@ get_header(); ?>
                     </div>
                 </header>
 
-                <div class="max-w-4xl mx-auto px-6 py-12 md:py-20 text-left">
+                <div class="max-w-7xl mx-auto px-6 py-12 md:py-20 text-left">
 
                     <div class="text-[#3D3F52] font-300 text-lg leading-relaxed 
                         
@@ -100,7 +100,7 @@ get_header(); ?>
             </article>
 
             <div class="bg-[#F5F3EE] border-t border-stone-200 py-12">
-                <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-8 text-center sm:text-left">
+                <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-8 text-center sm:text-left">
 
                     <div class="w-full sm:w-1/2">
                         <div class="text-[var(--color-primary)] text-sm font-600  uppercase mb-2">← Publicación anterior</div>
