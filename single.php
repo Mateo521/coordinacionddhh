@@ -103,7 +103,7 @@ get_header(); ?>
                 <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-8 text-center sm:text-left">
 
                     <div class="w-full sm:w-1/2">
-                        <div class="text-[var(--color-primary)] text-sm font-600  uppercase mb-2">← Publicación anterior</div>
+                        <div class="text-[var(--color-primary)] text-sm font-600  uppercase mb-2">← Fecha anterior</div>
                         <div class="font-700 text-lg leading-snug">
                             <?php previous_post_link('%link', '<span class="text-[var(--color-base)] hover:text-[var(--color-primary)] transition-colors line-clamp-2">%title</span>'); ?>
                         </div>
@@ -112,7 +112,7 @@ get_header(); ?>
                     <div class="hidden sm:block w-px h-16 bg-stone-300"></div>
 
                     <div class="w-full sm:w-1/2 sm:text-right text-center">
-                        <div class="text-[var(--color-primary)] text-sm font-600  uppercase mb-2">Siguiente publicación →</div>
+                        <div class="text-[var(--color-primary)] text-sm font-600  uppercase mb-2">Siguiente fecha →</div>
                         <div class="font-700 text-lg leading-snug">
                             <?php next_post_link('%link', '<span class="text-[var(--color-base)] hover:text-[var(--color-primary)] transition-colors line-clamp-2">%title</span>'); ?>
                         </div>
