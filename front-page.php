@@ -46,15 +46,15 @@ get_header(); ?>
                 </div>
 
                 <div class="relative flex justify-center lg:justify-end">
-                    <div class="absolute -top-4 -right-4 w-full max-w-sm h-full border border-[var(--color-primary)]/20 "></div>
+                    <!--div class="absolute -top-4 -right-4 w-full max-w-sm h-full border border-[var(--color-primary)]/20 "></div-->
                     <div class="relative w-full max-w-sm overflow-hidden shadow-2xl aspect-[3/4] bg-gradient-to-br from-[#1a2f54] to-[#0a1628] flex flex-col items-center justify-center border border-white/10">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/Mauricio-Amilcar-Lopez.jpg" class="size-full absolute top-0 left-0" alt="Mauricio Amilcar López">
                         <div class="text-white/30 text-sm font-300 text-center px-8 leading-relaxed">
                             Foto de<br />Mauricio Amilcar López
                         </div>
-                        <div class="absolute bottom-6 left-6 right-6 bg-white/5 backdrop-blur border border-white/10 px-4 py-3">
-                            <div class="text-white text-sm font-600  uppercase mb-0.5">Primer Rector</div>
-                            <div class="text-white text-sm font-400">Universidad Nacional de San Luis</div>
+                        <div class="absolute bottom-6 left-6 right-6 bg-white text-black  px-4 py-3">
+                            <div class=" text-sm font-600  uppercase mb-0.5">Primer Rector</div>
+                            <div class=" text-sm font-400">Universidad Nacional de San Luis</div>
                         </div>
                     </div>
                     <div class="absolute -bottom-4 -left-4 bg-[var(--color-primary)] px-4 py-3 shadow-xl">
@@ -67,8 +67,10 @@ get_header(); ?>
 
     <section class="bg-white border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-6 py-10">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <a href="#normativa" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+
+
+                <!--a href="#normativa" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -83,7 +85,9 @@ get_header(); ?>
                         </svg>
                     </div>
                     <span class="text-sm font-600 text-[#1A1C2E] group-hover:text-[#007aa2] transition-colors leading-snug">Ordenanza OR 8‑2025</span>
-                </a>
+                </a-->
+
+
                 <a href="#integrantes" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +154,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section id="normativa" class="bg-[var(--color-base)] py-16">
+    <!--section id="normativa" class="bg-[var(--color-base)] py-16">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
                 <div>
@@ -159,6 +163,8 @@ get_header(); ?>
                     </div>
                     <h3 class="text-2xl font-700 text-white">Documentos de referencia</h3>
                 </div>
+
+
                 <div class="flex flex-wrap gap-3">
                     <a href="#" class="bg-white/10 hover:bg-[var(--color-primary)] border border-white/20 hover:border-[var(--color-primary)] text-white hover:text-[var(--color-base)] px-5 py-3 text-sm font-500 transition-all duration-200 flex items-center gap-2">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,9 +182,13 @@ get_header(); ?>
                         </svg> Acuerdo CIN 1169/22
                     </a>
                 </div>
+
+
             </div>
         </div>
-    </section>
+    </section-->
+
+
 
     <section id="lineas" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
@@ -297,7 +307,7 @@ get_header(); ?>
                             Sostener hoy una Coordinación General de Derechos Humanos implica honrar el legado de Mauricio López y proyectarlo hacia el presente. Significa reafirmar que la universidad no es un espacio neutral.
                         </p>
                         <div class="flex items-center gap-3">
-                           
+
                             <span class="text-gray-100 text-sm font-500  uppercase">Fundamentación institucional</span>
                         </div>
                     </div>
@@ -456,8 +466,8 @@ get_header(); ?>
                     </div>
                     <h2 class="text-4xl font-800 text-[var(--color-base)]">Novedades y actividades</h2>
                 </div>
-                <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="inline-flex items-center gap-2 text-[var(--color-base)] border-b border-[var(--color-primary)] pb-0.5 text-sm font-600 hover:text-[#007aa2] transition-colors">
-                    Ver todas <span>→</span>
+                <a href="/novedades" class="inline-flex items-center gap-2 text-[var(--color-base)] border-b border-[var(--color-primary)] pb-0.5 text-sm font-600 hover:text-[#007aa2] transition-colors">
+                    Ver más <span>→</span>
                 </a>
             </div>
 
@@ -658,7 +668,47 @@ get_header(); ?>
                     <h3 class="text-2xl font-800 text-[var(--color-base)]">Documentos</h3>
                     <p class="text-sm text-[#555770] font-300 mt-2 leading-relaxed">Accedé a resoluciones, documentos institucionales, materiales pedagógicos y publicaciones.</p>
                 </div>
-                <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
+
+
+                <?php
+
+                $args_docs = array(
+                    'post_type'      => 'documentos',
+                    'posts_per_page' => 1,
+                    'tax_query'      => array(
+                        array(
+                            'taxonomy' => 'tipo_documento',
+                            'field'    => 'slug',
+                            'terms'    => 'resoluciones',
+                        ),
+                    ),
+                );
+                $query_docs = new WP_Query($args_docs);
+
+                $enlace_tarjeta = get_post_type_archive_link('documentos');
+                $descripcion_doc = 'Documentos normativos';
+
+                if ($query_docs->have_posts()) {
+                    while ($query_docs->have_posts()) {
+                        $query_docs->the_post();
+
+                        // Si usa ACF para el archivo PDF
+                        $archivo_pdf = get_field('archivo_adjunto');
+                        if ($archivo_pdf) {
+                            $enlace_tarjeta = esc_url($archivo_pdf);
+                        } else {
+                            $enlace_tarjeta = get_permalink();
+                        }
+
+                        if (has_excerpt()) {
+                            $descripcion_doc = get_the_excerpt();
+                        }
+                    }
+                    wp_reset_postdata();
+                }
+                ?>
+
+                <a href="<?php echo $enlace_tarjeta; ?>" <?php echo (strpos($enlace_tarjeta, '.pdf') !== false) ? 'target="_blank" rel="noopener noreferrer"' : ''; ?> class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -666,10 +716,12 @@ get_header(); ?>
                     </div>
                     <div>
                         <div class="text-sm font-600 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors">Resoluciones</div>
-                        <div class="text-sm text-black">Documentos normativos</div>
+                        <div class="text-sm text-black"><?php echo esc_html($descripcion_doc); ?></div>
                     </div>
                 </a>
-                <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
+
+
+                <a href="/materiales-pedagogicos" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -680,7 +732,7 @@ get_header(); ?>
                         <div class="text-sm text-black">Para la formación</div>
                     </div>
                 </a>
-                <a href="#" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
+                <a href="/novedades" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />

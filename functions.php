@@ -186,3 +186,55 @@ function registrar_cpt_ciclos() {
     register_taxonomy('tipo_ciclo', array('ciclos'), $tax_args);
 }
 add_action('init', 'registrar_cpt_ciclos');
+
+
+
+function registrar_cpt_documentos() {
+    $labels = array(
+        'name'               => 'Documentos Normativos',
+        'singular_name'      => 'Documento',
+        'menu_name'          => 'Documentos',
+        'add_new'            => 'Añadir Nuevo',
+        'add_new_item'       => 'Añadir Nuevo Documento',
+        'edit_item'          => 'Editar Documento',
+        'search_items'       => 'Buscar Documentos',
+        'not_found'          => 'No se encontraron documentos',
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'public'              => true,
+        'has_archive'         => true,
+        'publicly_queryable'  => true,
+        'query_var'           => true,
+        'rewrite'             => array('slug' => 'documentos-normativos'),
+        'capability_type'     => 'post',
+        'hierarchical'        => false,
+        'menu_position'       => 7,
+        'menu_icon'           => 'dashicons-media-document',
+        'supports'            => array('title', 'editor', 'excerpt'),
+        'show_in_rest'        => true,
+    );
+
+    register_post_type('documentos', $args);
+
+    $tax_labels = array(
+        'name'              => 'Tipos de Documento',
+        'singular_name'     => 'Tipo de Documento',
+        'all_items'         => 'Todos los Tipos',
+        'add_new_item'      => 'Añadir Nuevo Tipo',
+        'menu_name'         => 'Tipos de Doc.',
+    );
+
+    $tax_args = array(
+        'hierarchical'      => true,
+        'labels'            => $tax_labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'rewrite'           => array('slug' => 'tipo-documento'),
+        'show_in_rest'      => true,
+    );
+
+    register_taxonomy('tipo_documento', array('documentos'), $tax_args);
+}
+add_action('init', 'registrar_cpt_documentos');
