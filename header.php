@@ -33,7 +33,7 @@
         <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
 
             <a href="<?php echo home_url('#inicio'); ?>" class="flex items-center gap-3 group">
-                <img class="h-18 py-2" src="<?php echo get_template_directory_uri(); ?>/images/logo-n-unsl.png" alt="<?php bloginfo('name'); ?>">
+                <img class="h-18 py-2" src="<?php echo get_template_directory_uri(); ?>/images/logo-unsl.svg" alt="<?php bloginfo('name'); ?>">
             </a>
             
             <div class="hidden lg:flex items-center">
