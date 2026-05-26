@@ -238,3 +238,16 @@ function registrar_cpt_documentos() {
     register_taxonomy('tipo_documento', array('documentos'), $tax_args);
 }
 add_action('init', 'registrar_cpt_documentos');
+
+
+
+
+function limitar_busqueda_post_types($query) {
+
+    if ($query->is_search && !is_admin() && $query->is_main_query()) {
+
+        $query->set('post_type', array('post', 'materiales', 'ciclos', 'documentos'));
+    }
+    return $query;
+}
+add_action('pre_get_posts', 'limitar_busqueda_post_types');
