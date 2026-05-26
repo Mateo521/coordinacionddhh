@@ -52,7 +52,7 @@ get_header(); ?>
                             <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
                         </div>
                         <a href="<?php the_permalink(); ?>" class="inline-flex items-center gap-2 text-[var(--color-primary)] text-sm font-600 hover:gap-3 transition-all mt-auto border-t border-stone-100 pt-4">
-                            Ver contenido <span>→</span>
+                            Ver más <span>→</span>
                         </a>
                     </div>
                 </article>

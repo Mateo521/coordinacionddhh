@@ -68,15 +68,15 @@ function registrar_cpt_materiales()
 {
 
     $labels = array(
-        'name'               => 'Materiales Pedagógicos',
-        'singular_name'      => 'Material Pedagógico',
+        'name'               => 'Materiales pedagógicos',
+        'singular_name'      => 'Material pedagógico',
         'menu_name'          => 'Materiales',
-        'add_new'            => 'Añadir Nuevo',
-        'add_new_item'       => 'Añadir Nuevo Material',
-        'edit_item'          => 'Editar Material',
-        'new_item'           => 'Nuevo Material',
-        'view_item'          => 'Ver Material',
-        'search_items'       => 'Buscar Materiales',
+        'add_new'            => 'Añadir nuevo',
+        'add_new_item'       => 'Añadir nuevo material',
+        'edit_item'          => 'Editar material',
+        'new_item'           => 'Nuevo material',
+        'view_item'          => 'Ver material',
+        'search_items'       => 'Buscar materiales',
         'not_found'          => 'No se encontraron materiales',
         'not_found_in_trash' => 'No hay materiales en la papelera',
     );
@@ -101,14 +101,14 @@ function registrar_cpt_materiales()
 
 
     $tax_labels = array(
-        'name'              => 'Categorías de Material',
-        'singular_name'     => 'Categoría de Material',
-        'search_items'      => 'Buscar Categorías',
-        'all_items'         => 'Todas las Categorías',
-        'edit_item'         => 'Editar Categoría',
-        'update_item'       => 'Actualizar Categoría',
-        'add_new_item'      => 'Añadir Nueva Categoría',
-        'new_item_name'     => 'Nuevo Nombre de Categoría',
+        'name'              => 'Categorías de material',
+        'singular_name'     => 'Categoría de material',
+        'search_items'      => 'Buscar categorías',
+        'all_items'         => 'Todas las categorías',
+        'edit_item'         => 'Editar categoría',
+        'update_item'       => 'Actualizar categoría',
+        'add_new_item'      => 'Añadir Nueva categoría',
+        'new_item_name'     => 'Nuevo Nombre de categoría',
         'menu_name'         => 'Categorías',
     );
 
@@ -130,15 +130,15 @@ add_action('init', 'registrar_cpt_materiales');
 
 function registrar_cpt_ciclos() {
     $labels = array(
-        'name'               => 'Ciclos y Entrevistas',
+        'name'               => 'Ciclos y entrevistas',
         'singular_name'      => 'Entrevista / Contenido',
         'menu_name'          => 'Ciclos',
-        'add_new'            => 'Añadir Nueva',
-        'add_new_item'       => 'Añadir Nueva Entrevista',
-        'edit_item'          => 'Editar Entrevista',
-        'new_item'           => 'Nueva Entrevista',
-        'view_item'          => 'Ver Entrevista',
-        'search_items'       => 'Buscar en Ciclos',
+        'add_new'            => 'Añadir nueva',
+        'add_new_item'       => 'Añadir nueva entrevista',
+        'edit_item'          => 'Editar entrevista',
+        'new_item'           => 'Nueva entrevista',
+        'view_item'          => 'Ver entrevista',
+        'search_items'       => 'Buscar en ciclos',
         'not_found'          => 'No se encontraron entrevistas',
         'not_found_in_trash' => 'No hay entrevistas en la papelera',
     );
@@ -162,15 +162,15 @@ function registrar_cpt_ciclos() {
 
 
     $tax_labels = array(
-        'name'              => 'Tipos de Ciclo',
-        'singular_name'     => 'Tipo de Ciclo',
-        'search_items'      => 'Buscar Ciclos',
-        'all_items'         => 'Todos los Ciclos',
-        'edit_item'         => 'Editar Ciclo',
-        'update_item'       => 'Actualizar Ciclo',
-        'add_new_item'      => 'Añadir Nuevo Ciclo',
-        'new_item_name'     => 'Nombre del Nuevo Ciclo',
-        'menu_name'         => 'Tipos de Ciclo',
+        'name'              => 'Tipos de ciclo',
+        'singular_name'     => 'Tipo de ciclo',
+        'search_items'      => 'Buscar ciclos',
+        'all_items'         => 'Todos los ciclos',
+        'edit_item'         => 'Editar ciclo',
+        'update_item'       => 'Actualizar ciclo',
+        'add_new_item'      => 'Añadir nuevo ciclo',
+        'new_item_name'     => 'Nombre del nuevo ciclo',
+        'menu_name'         => 'Tipos de ciclo',
     );
 
     $tax_args = array(
@@ -191,13 +191,13 @@ add_action('init', 'registrar_cpt_ciclos');
 
 function registrar_cpt_documentos() {
     $labels = array(
-        'name'               => 'Documentos Normativos',
+        'name'               => 'Documentos normativos',
         'singular_name'      => 'Documento',
         'menu_name'          => 'Documentos',
-        'add_new'            => 'Añadir Nuevo',
-        'add_new_item'       => 'Añadir Nuevo Documento',
-        'edit_item'          => 'Editar Documento',
-        'search_items'       => 'Buscar Documentos',
+        'add_new'            => 'Añadir nuevo',
+        'add_new_item'       => 'Añadir nuevo documento',
+        'edit_item'          => 'Editar documento',
+        'search_items'       => 'Buscar documentos',
         'not_found'          => 'No se encontraron documentos',
     );
 
@@ -219,11 +219,11 @@ function registrar_cpt_documentos() {
     register_post_type('documentos', $args);
 
     $tax_labels = array(
-        'name'              => 'Tipos de Documento',
-        'singular_name'     => 'Tipo de Documento',
-        'all_items'         => 'Todos los Tipos',
-        'add_new_item'      => 'Añadir Nuevo Tipo',
-        'menu_name'         => 'Tipos de Doc.',
+        'name'              => 'Tipos de documento',
+        'singular_name'     => 'Tipo de documento',
+        'all_items'         => 'Todos los tipos',
+        'add_new_item'      => 'Añadir nuevo tipo',
+        'menu_name'         => 'Tipos de doc.',
     );
 
     $tax_args = array(
