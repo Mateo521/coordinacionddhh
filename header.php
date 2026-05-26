@@ -69,7 +69,7 @@
         <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-1">
             
             <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>" class="mb-4 relative">
-                <input type="text" name="s" value="<?php echo get_search_query(); ?>" placeholder="Buscar en el sitio..." 
+                <input type="text" name="s" value="<?php echo get_search_query(); ?>" placeholder="Buscar..." 
                     class="w-full bg-white/5 border border-white/20 text-white placeholder-white/40 px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-primary)] transition-colors" required />
                 <button type="submit" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/50">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
