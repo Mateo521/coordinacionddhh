@@ -23,22 +23,18 @@ if (have_posts()) :
                 </p>
             </div>
         </section>
-
         <main class="bg-[#F5F3EE] py-20 min-h-screen">
             <div class="max-w-7xl mx-auto px-6">
-
                 <div class="mb-12  py-2 ">
                     <p class="text-xl font-500 text-[var(--color-base)] leading-relaxed">
                         <?php echo get_field('fundamentos_destacado') ?: 'La Agenda Anual Común y Colectiva a 50 años de la dictadura... (Texto de respaldo)'; ?>
                     </p>
                 </div>
-
                 <div class="text-[#3D3F52] text-base font-400 leading-relaxed space-y-6 
                     [&_p]:mb-6 [&_strong]:font-700 [&_strong]:text-[var(--color-base)]
                     [&_a]:text-[var(--color-primary)] [&_a]:underline hover:[&_a]:text-[var(--color-base)] transition-colors">
                     <?php the_content(); ?>
                 </div>
-
                 <div class="mt-16 bg-white border border-stone-200 p-8 shadow-sm">
                     <h3 class="text-xl font-700 text-[var(--color-base)] mb-4 flex items-center gap-3">
                         <span class="w-4 h-4 bg-[var(--color-primary)] block"></span>
