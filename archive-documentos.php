@@ -13,7 +13,7 @@ get_header(); ?>
             Documentos
         </h1>
         <p class="text-white/60 font-300 text-base max-w-2xl leading-relaxed">
-            Ordenanzas, resoluciones y declaraciones institucionales de la Coordinación General de Derechos Humanos.
+            Ordenanzas, resoluciones y declaraciones...
         </p>
     </div>
 </section>

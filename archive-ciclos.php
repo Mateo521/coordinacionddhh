@@ -13,7 +13,7 @@ get_header(); ?>
             Todos los Ciclos y entrevistas
         </h1>
         <p class="text-white/60 font-300 text-base max-w-2xl leading-relaxed">
-            Ciclos, entrevistas y producciones multimedia de la coordinación.
+            Ciclos, entrevistas y producciones...
         </p>
     </div>
 </section>
