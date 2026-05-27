@@ -90,16 +90,29 @@ get_header(); ?>
 
                 <a href="#integrantes" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
+
+
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0" />
+
+
+
+
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3.05A2.5 2.5 0 1 1 9 5.5M19.5 17h.5a1 1 0 0 0 1-1 3 3 0 0 0-3-3h-1m0-3.05a2.5 2.5 0 1 0-2-4.45m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3 1 1 0 0 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
+
+
                         </svg>
+
+
                     </div>
+
+
+
                     <span class="text-sm font-600 text-[#1A1C2E] group-hover:text-[#007aa2] transition-colors leading-snug">Integrantes de la Comisión</span>
                 </a>
                 <a href="#lineas" class="group flex flex-col items-center gap-3 p-5 border border-stone-200 hover:border-[var(--color-primary)] hover:bg-[#FBF8F1] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 group-hover:bg-[var(--color-primary)]/10 flex items-center justify-center transition-colors">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-5-4v4h4V3h-4Z" />
                         </svg>
                     </div>
                     <span class="text-sm font-600 text-[#1A1C2E] group-hover:text-[#007aa2] transition-colors leading-snug">Líneas de Acción</span>
@@ -107,7 +120,7 @@ get_header(); ?>
                 <a href="#contacto" class="group flex flex-col items-center gap-3 p-5 bg-[var(--color-base)] hover:bg-[#1a2f54] transition-all duration-200 text-center hover:-translate-y-0.5 hover:shadow-md col-span-2 md:col-span-1">
                     <div class="w-10 h-10 bg-white/10 flex items-center justify-center">
                         <svg class="w-5 h-5 text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z" />
                         </svg>
                     </div>
                     <span class="text-sm font-600 text-white leading-snug">Contacto</span>
@@ -692,7 +705,7 @@ get_header(); ?>
                     while ($query_docs->have_posts()) {
                         $query_docs->the_post();
 
-                        // Si usa ACF para el archivo PDF
+
                         $archivo_pdf = get_field('archivo_adjunto');
                         if ($archivo_pdf) {
                             $enlace_tarjeta = esc_url($archivo_pdf);
@@ -711,7 +724,8 @@ get_header(); ?>
                 <a href="<?php echo $enlace_tarjeta; ?>" <?php echo (strpos($enlace_tarjeta, '.pdf') !== false) ? 'target="_blank" rel="noopener noreferrer"' : ''; ?> class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3v4a1 1 0 0 1-1 1H5m4 8h6m-6-4h6m4-8v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z" />
+
                         </svg>
                     </div>
                     <div>
@@ -724,7 +738,8 @@ get_header(); ?>
                 <a href="/materiales-pedagogicos" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.03v13m0-13c-2.819-.831-4.715-1.076-8.029-1.023A.99.99 0 0 0 3 6v11c0 .563.466 1.014 1.03 1.007 3.122-.043 5.018.212 7.97 1.023m0-13c2.819-.831 4.715-1.076 8.029-1.023A.99.99 0 0 1 21 6v11c0 .563-.466 1.014-1.03 1.007-3.122-.043-5.018.212-7.97 1.023" />
+
                         </svg>
                     </div>
                     <div>
@@ -735,7 +750,8 @@ get_header(); ?>
                 <a href="/novedades" class="group flex items-center gap-4 p-5 border border-stone-200 hover:border-[var(--color-primary)]/40 hover:bg-[#FBF8F1] transition-all">
                     <div class="w-10 h-10 bg-[var(--color-base)]/5 flex items-center justify-center shrink-0 group-hover:bg-[var(--color-primary)]/10">
                         <svg class="w-5 h-5 text-[var(--color-base)] group-hover:text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M10 3v4a1 1 0 0 1-1 1H5m14-4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z" />
+
                         </svg>
                     </div>
                     <div>
@@ -762,19 +778,24 @@ get_header(); ?>
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                                 <svg class="w-5 h-5 text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-8.029-4.46a2 2 0 0 0-1.942 0L3 8m18 0-9 6.5L3 8" />
+
                                 </svg>
                             </div>
                             <div>
-                                <div class="text-white text-sm font-400 mb-0.5 uppercase ">Correo institucional</div>
+                                <div class="text-white text-sm font-400 mb-0.5 uppercase ">Correo</div>
                                 <a href="mailto:unsl.coordinacionddhh@gmail.com" class="text-white font-500 hover:text-[#007aa2] transition-colors">unsl.coordinacionddhh@gmail.com</a>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                                 <svg class="w-5 h-5 text-[#007aa2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+
+
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
+
+
                                 </svg>
                             </div>
                             <div>

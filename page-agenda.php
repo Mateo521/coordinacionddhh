@@ -42,6 +42,8 @@ get_header(); ?>
                     Arte y Cultura
                 </button>
             </div>
+
+
         </div>
     </div>
 </section>
@@ -91,7 +93,7 @@ get_header(); ?>
                     echo '<div class="mes-separador pt-10 pb-2 border-b border-stone-200 mb-6">';
                     echo '<h2 class="text-2xl font-800 text-[var(--color-base)] tracking-wide">' . esc_html($mes_anio_evento) . '</h2>';
                     echo '</div>';
-                    // Actualizamos la variable
+                
                     $mes_actual = $mes_anio_evento;
                 }
 
