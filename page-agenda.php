@@ -24,25 +24,34 @@ get_header(); ?>
                 </p>
             </div>
 
+
+
             <div class="flex flex-wrap gap-2" id="filtros">
                 <button data-cat="todos" onclick="filtrar(this)"
                     class="filter-btn active px-4 py-2 rounded-full text-sm font-600 bg-[var(--color-primary)] text-[#0E1B35] transition-all">
                     Todos
                 </button>
-                <button data-cat="memoria" onclick="filtrar(this)"
-                    class="filter-btn px-4 py-2 rounded-full text-sm font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
-                    Memoria
-                </button>
-                <button data-cat="genero" onclick="filtrar(this)"
-                    class="filter-btn px-4 py-2 rounded-full text-sm font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
-                    Género y Diversidad
-                </button>
-                <button data-cat="cultura" onclick="filtrar(this)"
-                    class="filter-btn px-4 py-2 rounded-full text-sm font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">
-                    Arte y Cultura
-                </button>
-            </div>
 
+                <?php
+
+                $categorias_agenda = get_terms(array(
+                    'taxonomy'   => 'categoria_evento',
+                    'hide_empty' => true,
+                ));
+
+
+                if (!is_wp_error($categorias_agenda) && !empty($categorias_agenda)) {
+                    foreach ($categorias_agenda as $categoria) {
+
+                        $slug_categoria = esc_attr($categoria->slug);
+                        $nombre_categoria = esc_html($categoria->name);
+                        echo '<button data-cat="' . $slug_categoria . '" onclick="filtrar(this)" class="filter-btn px-4 py-2 rounded-full text-sm font-600 bg-white/10 text-white/60 hover:bg-white/20 transition-all">';
+                        echo $nombre_categoria;
+                        echo '</button>';
+                    }
+                }
+                ?>
+            </div>
 
         </div>
     </div>
@@ -93,7 +102,7 @@ get_header(); ?>
                     echo '<div class="mes-separador pt-10 pb-2 border-b border-stone-200 mb-6">';
                     echo '<h2 class="text-2xl font-800 text-[var(--color-base)] tracking-wide">' . esc_html($mes_anio_evento) . '</h2>';
                     echo '</div>';
-                
+
                     $mes_actual = $mes_anio_evento;
                 }
 
