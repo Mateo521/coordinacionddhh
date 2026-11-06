@@ -3,24 +3,27 @@
 get_header(); ?>
 
 <main>
-    <section id="inicio" class="min-h-screen bg-[var(--color-base)] relative overflow-hidden flex items-center">
+    <section id="inicio" class="min-h-screen bg-slate-50 relative overflow-hidden flex items-center">
+
         <div class="absolute inset-0 opacity-5">
             <div class="absolute top-0 right-0 w-[700px] h-[700px] rounded-full bg-[var(--color-primary)] translate-x-1/3 -translate-y-1/3"></div>
             <div class="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[var(--color-primary)] -translate-x-1/3 translate-y-1/3"></div>
         </div>
-        <div class="absolute inset-0 opacity-[0.04]">
-            <div class="absolute top-1/4 left-0 right-0 h-px bg-white"></div>
-            <div class="absolute top-2/4 left-0 right-0 h-px bg-white"></div>
-            <div class="absolute top-3/4 left-0 right-0 h-px bg-white"></div>
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-0 right-0 h-px bg-slate-900/5"></div>
+            <div class="absolute top-2/4 left-0 right-0 h-px bg-slate-900/5"></div>
+            <div class="absolute top-3/4 left-0 right-0 h-px bg-slate-900/5"></div>
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16 w-full">
             <div class="grid lg:grid-cols-2 gap-16 items-center min-h-[85vh]">
+
+
                 <div class="flex flex-col justify-center">
                     <div class="inline-flex items-center gap-2 mb-8"></div>
                     <blockquote class="mb-8">
                         <div class="text-[#007aa2] text-4xl font-300 leading-none mb-4 select-none">&ldquo;</div>
-                        <p class="text-white text-2xl lg:text-3xl font-300 leading-relaxed tracking-wide">
+                        <p class="text-slate-800 text-2xl lg:text-3xl font-300 leading-relaxed tracking-wide">
                             Nuestra universidad dejará de ser una isla extraña en el pueblo donde se haya inserta, para convertirse en
                             <span class="font-700 text-[var(--color-primary)]">alma y nervio</span>
                             de su comunidad.
@@ -30,40 +33,39 @@ get_header(); ?>
 
                     <div class="flex items-center gap-4 mb-12">
                         <div>
-                            <div class="text-white font-600 text-base">Mauricio Amilcar López</div>
-                            <div class="text-white text-sm font-300">Primer rector de la UNSL · Defensor de los derechos humanos</div>
+                            <div class="text-slate-900 font-600 text-base">Mauricio Amilcar López</div>
+                            <div class="text-slate-600 text-sm font-300">Primer rector de la UNSL · Defensor de los derechos humanos</div>
                         </div>
                     </div>
 
                     <div class="flex flex-wrap gap-3">
-                        <a href="#institucional" class="bg-[var(--color-primary)] hover:bg-[#B8923A] text-[var(--color-base)] px-6 py-3 font-600 text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+                        <a href="#institucional" class="bg-[var(--color-primary)] hover:bg-[#B8923A] text-white px-6 py-3 font-600 text-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
                             Conocer más
                         </a>
-                        <a href="#lineas" class="border border-white/30 hover:border-[var(--color-primary)] text-white hover:text-[#007aa2] px-6 py-3 font-400 text-sm transition-all duration-200">
+                        <a href="#lineas" class="border border-slate-300 hover:border-[var(--color-primary)] text-slate-700 hover:text-[#007aa2] px-6 py-3 font-400 text-sm transition-all duration-200">
                             Líneas de acción
                         </a>
                     </div>
                 </div>
 
+
                 <div class="relative flex justify-center lg:justify-end">
-                    <!--div class="absolute -top-4 -right-4 w-full max-w-sm h-full border border-[var(--color-primary)]/20 "></div-->
-                    <div class="relative w-full max-w-sm overflow-hidden shadow-2xl aspect-[3/4] bg-gradient-to-br from-[#1a2f54] to-[#0a1628] flex flex-col items-center justify-center border border-white/10">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/Mauricio-Amilcar-Lopez.jpg" class="size-full absolute top-0 left-0" alt="Mauricio Amilcar López">
-                        <div class="text-white/30 text-sm font-300 text-center px-8 leading-relaxed">
-                            Foto de<br />Mauricio Amilcar López
-                        </div>
-                        <div class="absolute bottom-6 left-6 right-6 bg-white text-black  px-4 py-3">
-                            <div class=" text-sm font-600  uppercase mb-0.5">Primer Rector</div>
-                            <div class=" text-sm font-400">Universidad Nacional de San Luis</div>
-                        </div>
+
+                    <div class="relative w-full max-w-sm overflow-hidden shadow-2xl aspect-[4/5] bg-slate-200 flex flex-col items-center justify-center border border-slate-200">
+
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/Mauricio-Amilcar-Lopez.jpg" class="size-full object-cover absolute top-0 left-0" alt="Mauricio Amilcar López">
                     </div>
+
+
                     <div class="absolute -bottom-4 -left-4 bg-[var(--color-primary)] px-4 py-3 shadow-xl">
-                        <div class="text-[var(--color-base)] text-sm font-700  uppercase">DDHH UNSL</div>
+                        <div class="text-white text-sm font-700 uppercase">DDHH UNSL</div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <section class="bg-white border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-6 py-10">
